@@ -1,6 +1,4 @@
-# Track 4: Robust and Multilingual Automatic Evaluation Metrics for Open-Domain Dialogue Systems
-
-## Provided Datasets
+# Provided Datasets
 
 As development set, organizers will provide the following datasets identified during the DSTC10 Track 5 (Zhang et al, 2021), that sum up more than 35k turn-level human-annotations, which have been automatically translated to Spanish and Chinese, and back-translated both to English using MS Azure services:
 
@@ -42,19 +40,19 @@ Since the quality of the back-translated sentences can play an important role in
 
 During the test phase, a new set of 2k turn-level manually curated multilingual corpus (Spanish and Chinese) together with their human-evaluation annotations will be provided to participants to test models for both tasks. This corpus will be manually checked to guarantee its quality and high correlation with the original dialogues. Besides, in order to check the generalization capabilities of the proposed metrics from the participant, the test data will include a new dataset of human-chatbot interactions and their annotations.
 
-## Datasets Information and Statistics
+# Datasets Information and Statistics
 
 | Datasets Name | JSALT | DSTC10 | CDIAL |
 | --------------| :---: | :----: | :---: |
 | # Datsets | 19 | 7 | 3 |
-| Language | English, Spanish/Chinese, <br/> and English back-translation | English, Spanish/Chinese,<br/>and English back-translation | Chinese, English,<br/>and Chinese back-translation |
+| Language | English, Spanish/Chinese,<br/>and English back-translation | English, Spanish/Chinese,<br/>and English back-translation | Chinese, English,<br/>and Chinese back-translation |
 | Dialogues Type | Human-Human Open-Domain | Human-Chatbot Open-Domain | Human-Human Open-Domain
 | # Dialogues/<br/>Utterances | + 390.000 / + 3.000.000 | + 3.000 / + 60.000 | + 3.470 / +130.000
 | Annotations | Sentiment analysis and Toxicity | Turn/dialogue level human scores | —
 | Task 1 Set | Public: Train | Public: Dev, Test<br/>Hidden: Automatic Translations | Public: Train
 | Task 2 Set | Public: Train | Public: Dev, Test<br/>Hidden: Manually back-translation/paraphrased | —
 
-## Annex: Existing Datasets for Benchmarking
+# Annex: Existing Datasets for Benchmarking
 
 Correlation analysis on **DSTC6 human evaluation data** (Hori et al., 2017). The DSTC6 evaluation dataset contains generated responses from 20 systems for the 2000 dialogue contexts in the test set. Each generated response is annotated by 10 different Turkers using a 5-point Likert Scale. The annotation is based on whether the responses are relevant to the respective dialogue context. For each dialogue context, there are 11 gold reference responses including the original response.
 

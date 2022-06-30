@@ -1,5 +1,4 @@
-# DSTC11: Dialogue System Technology Challenge 11
-## Track 4: Robust and Multilingual Automatic Evaluation Metrics for Open-Domain Dialogue Systems
+# DSTC11: Dialogue System Technology Challenge 11<br/><br/>Track 4: Robust and Multilingual Automatic Evaluation Metrics for Open-Domain Dialogue Systems
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
@@ -19,10 +18,10 @@ For each evaluation task, Spearman correlation will be computed to compare the p
 
 For more details:
 
-* [Provided datasets](/dstc11/track4-provided-datasets.md).
-* [Task 1: Metrics for multilingual data](/dstc11/track4-task1-metrics-multilingual-data.md).
-* [Task 2: Robust metrics](/dstc11/track4-task1-robust-metrics.md).
-* [FAQ](/dstc11/track4-faq.md).
+* [Provided datasets](/dstc11/track4-provided-datasets.md)
+* [Task 1: Metrics for multilingual data](/dstc11/track4-task1-metrics-multilingual-data.md)
+* [Task 2: Robust metrics](/dstc11/track4-task2-robust-metrics.md)
+* [FAQ](/dstc11/track4-faq.md)
 
 ## Schedule
 

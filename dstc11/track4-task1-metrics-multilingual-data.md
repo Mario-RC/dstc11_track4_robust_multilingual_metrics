@@ -1,6 +1,4 @@
-# Track 4: Robust and Multilingual Automatic Evaluation Metrics for Open-Domain Dialogue Systems
-
-## Task 1: Metrics for Multilingual Data
+# Task 1: Metrics for Multilingual Data
 
 In this task, the goal for participants is to propose effective automatic dialogue evaluation metrics that exhibit previously mentioned properties (section 2) and perform well on a multilingual setup (English, Spanish and Chinese). In concrete, participants will propose a single multilingual model obtaining high correlations with human-annotations when evaluated on multilingual dialogues (development set in section 2.1) and perform well on the hidden multilingual test set. Participants are expected to use pre-trained multilingual language models and train them to predict multidimensional quality metrics by using self-supervised techniques and optionally fine-tune their system over a subset of the development data.
 
