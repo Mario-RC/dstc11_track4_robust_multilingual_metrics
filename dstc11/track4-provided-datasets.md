@@ -54,7 +54,7 @@ During the test phase, a new set of 2k turn-level manually curated multilingual 
 
 # Data Format
 
-All data given follows the [Unified Dialogue Data Formats](https://github.com/CHANEL-JSALT-2020/Wiki/wiki/Unified-Dialogue-Data-Formats) provides guidelines on how to store, maintain and handle dialogue corpora.
+All data given follows the [Unified Dialogue Data Formats](https://github.com/CHANEL-JSALT-2020/Wiki/wiki/Unified-Dialogue-Data-Formats) which provides guidelines on how to store, maintain and handle dialogue corpora.
 
 # Annex: Existing Datasets for Benchmarking
 
