@@ -52,6 +52,10 @@ During the test phase, a new set of 2k turn-level manually curated multilingual 
 | Task 1 Set | Public: Train | Public: Dev, Test<br/>Hidden: Automatic Translations | Public: Train
 | Task 2 Set | Public: Train | Public: Dev, Test<br/>Hidden: Manually back-translation/paraphrased | —
 
+# Data Format
+
+All data given follows the [Unified Dialogue Data Formats](https://github.com/CHANEL-JSALT-2020/Wiki/wiki/Unified-Dialogue-Data-Formats) provides guidelines on how to store, maintain and handle dialogue corpora.
+
 # Annex: Existing Datasets for Benchmarking
 
 Correlation analysis on **DSTC6 human evaluation data** (Hori et al., 2017). The DSTC6 evaluation dataset contains generated responses from 20 systems for the 2000 dialogue contexts in the test set. Each generated response is annotated by 10 different Turkers using a 5-point Likert Scale. The annotation is based on whether the responses are relevant to the respective dialogue context. For each dialogue context, there are 11 gold reference responses including the original response.
