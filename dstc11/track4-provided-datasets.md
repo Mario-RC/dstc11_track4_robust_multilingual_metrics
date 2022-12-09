@@ -1,6 +1,6 @@
 # Provided Datasets
 
-As development set, organizers will provide the following datasets identified during the DSTC10 Track 5 (Zhang et al, 2021), that sum up more than 35k turn-level human-annotations, which have been automatically translated to Spanish and Chinese, and back-translated both to English using MS Azure services:
+As development set, organizers will provide the following datasets identified during the [DSTC10 Track 5](https://chateval.org/dstc10) (Zhang et al, 2021), that sum up more than 35k turn-level human-annotations, which have been automatically translated to Spanish and Chinese, and back-translated both to English using [MS Azure](https://azure.microsoft.com/en-us/products/cognitive-services/translator/) services.
 
 * DSTC6 human evaluation data (Hori et al., 2017)
 * DSTC7 human evaluation data (Galley et al., 2019)
@@ -12,7 +12,7 @@ As development set, organizers will provide the following datasets identified du
 
 This development data can help participants to check the multilingualism or robustness capabilities of their trained models in terms of correlations with human-annotations. Additional databases, not mentioned here, will be added when available to increase the size of the benchmarking.
 
-Additionally, after the organizers' participation in the CHANEL@JSALT2020 workshop (Rudnicky et al., 2020) at John Hopkins University, they have automatically translated back-and-forth (using the same MS Azure translation service) a total of 19 well-known human-human dialogue [datasets](https://github.com/CHANEL-JSALT-2020/datasets):
+Additionally, after the organizers' participation in the [CHANEL@JSALT2020](https://github.com/CHANEL-JSALT-2020/datasets) workshop (Rudnicky et al., 2020) at John Hopkins University, they have automatically translated back-and-forth (using the same MS Azure translation service) a total of 18 well-known human-human dialogue datasets. The total amount of dialogues is 393k (approx. 3M turns).
 
 * DBDC (Higashinaka et al., 2016)
 * CMU_DoG (Zhou et al., 2018)
@@ -22,7 +22,6 @@ Additionally, after the organizers' participation in the CHANEL@JSALT2020 worksh
 * EmotionLines (Chen et al., 2018)
 * EmpathicDialogues (Rashkin et al., 2018)
 * Holl-E (Moghe et al., 2018)
-* KvPI (Song et al., 2020)
 * MEENA (Adiwardana et al., 2020)
 * MELD (Poria et al., 2019)
 * MetalWOz (Lee et al., 2019)
@@ -34,27 +33,84 @@ Additionally, after the organizers' participation in the CHANEL@JSALT2020 worksh
 * Wizard of Wikipedia (Dinan et al., 2019)
 * Wochat (D'Haro et al., 2016)
 
-The total amount of dialogues is 393k (approx. 3M turns). In addition, we will provide the same datasets translated into Chinese using the SotA Tencent MT system. These datasets will be provided to participants, together with automatic meta-data information (machine translation Quality Estimation (QE), toxicity, and sentiment analysis) for filtering and dialogue curation purposes, so the participants have a better reference of the dataset quality, being of great help for them to decide whether or not to use these translations/paraphrases in the training of their evaluation models, and optionally fine-tune multilingual pre-trained models allowing better performance on the proposed dialogue-oriented tasks.
+Moreover, the datasets provided by [THU-COAI](https://github.com/thu-coai) group (Conversational AI groups from Tsinghua University) will be used, naming this set of data CDial. They contain open domain human-human dialogs. They are originally in Chinese and contain of 3,470 dialogs (approx. 130k turns).
 
-Since the quality of the back-translated sentences can play an important role in estimating the metric scores. QE metric scores will be given to the participants using our QE system and other existing models (e.g., [Openkiwi](https://github.com/Unbabel/OpenKiwi) (Kepler et al., 2019)). This information will be given to participants so they can optionally use it for discarding dialogues or turns that do not show high quality when training their metrics. Participants will be welcome to use the data and ideas from the MT field to propose QE metrics that can, optionally, be included to provide final scores. Finally, the organizers may provide new translated dialogue datasets to allow participants to create more robust and better-trained systems.
+* ECM (Zhou et al., 2018)
+* KdConv (Zhou et al., 2020)
+* LCCC (Wang et al., 2020)
+
+In addition, we will provide the same datasets translated (CHANEL@JSALT2020 and CDial) into Chinese using the SotA [Tencent MT](https://www.tencentcloud.com/products/tmt) system.
+
+These datasets will be provided to participants, together with automatic meta-data information (machine translation Quality Estimation (QE), toxicity, and sentiment analysis) for filtering and dialogue curation purposes, so the participants have a better reference of the dataset quality, being of great help for them to decide whether or not to use these translations/paraphrases in the training of their evaluation models, and optionally fine-tune multilingual pre-trained models allowing better performance on the proposed dialogue-oriented tasks.
+
+Since the quality of the back-translated sentences can play an important role in estimating the metric scores. QE metric scores will be given to the participants using our QE system and other existing models (e.g., [COMET](https://github.com/Unbabel/COMET) (Rei et al., 2020)). This information will be given to participants so they can optionally use it for discarding dialogues or turns that do not show high quality when training their metrics. Participants will be welcome to use the data and ideas from the MT field to propose QE metrics that can, optionally, be included to provide final scores. Finally, the organizers may provide new translated dialogue datasets to allow participants to create more robust and better-trained systems.
+
+Regarding the paraphrases, all the original English sentences of each dataset will have multiple paraphrases, as well as annotations so that each participant can evaluate the quality of each paraphrase. The model used will be [PARROT](https://github.com/jsedoc/Parrot_Paraphraser) (Damodaran P., 2021).
+
+Additionally, ~2k random H-H turns of CDial in Chinese were manually annotated by Tencent AI. Also, ~5k new H-C Chinese turns (~500 dialogues) were generated with three different SotA chatbots (Tencent's model, Microsoft's Xiaoice (Zhou et al., 2020) and Baidu's Plato (Bao et al., 2019)) and manually annotated by Tencent AI.
 
 During the test phase, a new set of 2k turn-level manually curated multilingual corpus (Spanish and Chinese) together with their human-evaluation annotations will be provided to participants to test models for both tasks. This corpus will be manually checked to guarantee its quality and high correlation with the original dialogues. Besides, in order to check the generalization capabilities of the proposed metrics from the participant, the test data will include a new dataset of human-chatbot interactions and their annotations.
 
-# Datasets Information and Statistics
+# Datasets Statistics:
 
-| Datasets Name | JSALT | DSTC10 | CDIAL |
-| --------------| :---: | :----: | :---: |
-| # Datsets | 19 | 7 | 3 |
-| Language | English, Spanish/Chinese,<br/>and English back-translation | English, Spanish/Chinese,<br/>and English back-translation | Chinese, English,<br/>and Chinese back-translation |
+| Datasets<br/>Name | CHANEL | DSTC10 | CDIAL |
+| -------------- | :---: | :----: | :---: |
+| # Datsets | 18 | 7 | 3 |
+| Language | English, Spanish/Chinese translations,<br/>and English back-translation | English, Spanish/Chinese translations,<br/>and English back-translation | Chinese and English translations |
 | Dialogues Type | Human-Human Open-Domain | Human-Chatbot Open-Domain | Human-Human Open-Domain
 | # Dialogues/<br/>Utterances | + 390.000 / + 3.000.000 | + 3.000 / + 60.000 | + 3.470 / +130.000
-| Annotations | Sentiment analysis and Toxicity | Turn/dialogue level human scores | —
-| Task 1 Set | Public: Train | Public: Dev, Test<br/>Hidden: Automatic Translations | Public: Train
-| Task 2 Set | Public: Train | Public: Dev, Test<br/>Hidden: Manually back-translation/paraphrased | —
+| Annotations | Sentiment analysis and Toxicity | Sentiment analysis and Toxicity<br/>Turn level human scores | Turn level human scores
+| Task 1 Set | Train | Dev, Test | Train
+| Task 2 Set | Train | Dev, Test | —
+
+# Datasets Information:
+
+CHANEL dataset is Task 1 and Task 2 oriented. The source language is English.
+
+| CHANEL | Spanish<br/>Translation | Chinese<br/>Translation | English<br/>Translation | English<br/>Back-translation | Paraphrases | Sentiment<br/>Analysis | Content<br/>Moderate | Human<br/>Annotations |
+| --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| DBDC | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
+| CMU_DoG | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
+| Cornell Movie-Dialogs | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
+| DailyDialog | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | |
+| DECODE | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
+| EmotionLines | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
+| EmpathicDialogues | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | |
+| Holl-E | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
+| MEENA | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
+| MELD | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
+| MetalWOz | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
+| Movie-DiC | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
+| PersonaChat | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | |
+| SentimentLIAR | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
+| Switchboard Coherence | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
+| Topical-Chat | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | |
+| Wizard of Wikipedia | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | |
+| WOCHAT | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
+
+DSTC10 dataset is Task 1 and Task 2 oriented. The source language is English.
+
+| DSTC10 | Spanish<br/>Translation | Chinese<br/>Translation | English<br/>Translation | English<br/>Back-translation | Paraphrases | Sentiment<br/>Analysis | Content<br/>Moderate | Human<br/>Annotations |
+| --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| DSTC6 | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
+| DSTC7 | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Persona-Chatlog | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
+| ChatEval | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
+| USR | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
+| FED | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
+| DSTC10 | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
+
+CDIAL dataset is Task 1 oriented. The source language is Chinese.
+
+| CDIAL | Spanish<br/>Translation | Chinese<br/>Translation | English<br/>Translation | English<br/>Back-translation | Paraphrases | Sentiment<br/>Analysis | Content<br/>Moderate | Human<br/>Annotations |
+| --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| ECM | | | ✔ | | | | | ✔ |
+| KDCONV | | | ✔ | | | | | ✔ |
+| LCCC | | | ✔ | | | | | ✔ |
 
 # Data Format
 
-All data given follows the [Unified Dialogue Data Formats](https://github.com/CHANEL-JSALT-2020/Wiki/wiki/Unified-Dialogue-Data-Formats) which provides guidelines on how to store, maintain and handle dialogue corpora.
+All data given follows the [Data Formats](/dstc11/track4-datasets-format.md) which provides guidelines on how to store, maintain and handle dialogue corpora.
 
 # Annex: Existing Datasets for Benchmarking
 
@@ -109,8 +165,6 @@ Rashkin, H., Smith, E. M., Li, M., & Boureau, Y. L. (2018). Towards empathetic o
 
 Moghe, N., Arora, S., Banerjee, S., & Khapra, M. M. (2018). Towards exploiting background knowledge for building conversation systems. arXiv preprint arXiv:1809.08205.
 
-Song, H., Wang, Y., Zhang, W. N., Zhao, Z., Liu, T., & Liu, X. (2020). Profile consistency identification for open-domain dialogue agents. arXiv preprint arXiv:2009.09680.
-
 Adiwardana, D., Luong, M. T., So, D. R., Hall, J., Fiedel, N., Thoppilan, R., ... & Le, Q. V. (2020). Towards a human-like open-domain chatbot. arXiv preprint arXiv:2001.09977.
 
 Poria, S., Hazarika, D., Majumder, N., Naik, G., Cambria, E., & Mihalcea, R. (2018). Meld: A multimodal multi-party dataset for emotion recognition in conversations. arXiv preprint arXiv:1810.02508.
@@ -131,4 +185,16 @@ Dinan, E., Roller, S., Shuster, K., Fan, A., Auli, M., & Weston, J. (2018). Wiza
 
 D'Haro, L. F., Shawar, B. A., & Yu, Z. (2016). REWOCHAT 2016–Shared task description report. In Proceedings of the workshop on collecting and generating resources for chatbots and conversational agents-development and evaluation (RE-WOCHAT) (p. 39).
 
-Kepler, F., Trénous, J., Treviso, M., Vera, M., & Martins, A. F. (2019). OpenKiwi: An open source framework for quality estimation. arXiv preprint arXiv:1902.08646.
+Zhou, H., Huang, M., Zhang, T., Zhu, X., & Liu, B. (2018, April). Emotional chatting machine: Emotional conversation generation with internal and external memory. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 32, No. 1).
+
+Zhou, H., Zheng, C., Huang, K., Huang, M., & Zhu, X. (2020). Kdconv: A chinese multi-domain dialogue dataset towards multi-turn knowledge-driven conversation. arXiv preprint arXiv:2004.04100.
+
+Wang, Y., Ke, P., Zheng, Y., Huang, K., Jiang, Y., Zhu, X., & Huang, M. (2020, October). A large-scale chinese short-text conversation dataset. In CCF International Conference on Natural Language Processing and Chinese Computing (pp. 91-103). Springer, Cham.
+
+Rei, R., Stewart, C., Farinha, A. C., & Lavie, A. (2020). COMET: A neural framework for MT evaluation. arXiv preprint arXiv:2009.09025.
+
+Damodaran, P. (2021). Parrot: Paraphrase generation for NLU.
+
+Zhou, L., Gao, J., Li, D., & Shum, H. Y. (2020). The design and implementation of xiaoice, an empathetic social chatbot. Computational Linguistics, 46(1), 53-93.
+
+Bao, S., He, H., Wang, F., Wu, H., & Wang, H. (2019). Plato: Pre-trained dialogue generation model with discrete latent variable. arXiv preprint arXiv:1910.07931.

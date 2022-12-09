@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-## Track Overview
+# Track Overview
 
 This track consists of two tasks which are explained in more detail below:
 
@@ -19,11 +19,12 @@ For each evaluation task, Spearman correlation will be computed to compare the p
 For more details:
 
 * [Provided datasets](/dstc11/track4-provided-datasets.md)
+* [Task 2: Datasets format](/dstc11/track4-datasets-format.md)
 * [Task 1: Metrics for multilingual data](/dstc11/track4-task1-metrics-multilingual-data.md)
 * [Task 2: Robust metrics](/dstc11/track4-task2-robust-metrics.md)
 * [FAQ](/dstc11/track4-faq.md)
 
-## Schedule
+# Schedule
 
 * **Training/Validation data release**: From November to December in 2022
 * **Test data release**: Middle of March in 2023
@@ -33,17 +34,19 @@ For more details:
 * **Paper submission**: From March to May in 2023
 * **Workshop**: July, August or September in 2023
 
-## Baselines and Data Description
+# Baselines and Data Description
 
 For more information check the [Track Proposal](https://drive.google.com/file/d/1wHZdlz8JecDWiiJiwhP3VsKnbApdL6_e/view).
 
 ## Registration Details
 
-For registration go to the [Registration Details section](https://chateval.org/dstc11/annex-registration-details) at the [ChatEval website](https://chateval.org/dstc11). Any updates and information about the tracks will be posted on the [DSTC11 official website](https://dstc11.dstc.community/), or check the [DSTC11 official website](https://dstc11.dstc.community/).
+For registration go to the [Registration Details section](https://chateval.org/dstc11/annex-registration-details) at the [ChatEval website](https://chateval.org/dstc11).
 
-Any updates and information about the tracks will be posted on the DSTC11 official website, or check the [DSTC Mailing List](https://groups.google.com/a/dstc.community/g/list).
+There must be only one team per laboratory or research group. The members of the same team must be under a single registration, that is, the team leader must register his entire team by giving their e-mail addresses in addition to his own.
 
-## Organizers
+Any updates and information about the tracks will be posted on the [DSTC11 official website](https://dstc11.dstc.community/), or check the [DSTC11 official website](https://dstc11.dstc.community/).
+
+# Organizers
 
 * Mario Rodríguez-Cantelar (Universidad Politécnica de Madrid, Spain)
 * Chen Zhang (National University of Singapore, Singapore)
@@ -53,11 +56,30 @@ Any updates and information about the tracks will be posted on the DSTC11 offici
 * Luis F. D'Haro (Universidad Politécnica de Madrid, Spain)
 * Alexander Rudnicky (Carnegie Mellon University, USA)
 
-## Contact
+# Contact
 
 If you have further questions regarding the data, please let us know by the following email address at [dstc11-robust-multilingual-automatic-evaluation@googlegroups.com](dstc11-robust-multilingual-automatic-evaluation@googlegroups.com).
 
-## References
+# Acknowledgement
+
+This research project is supported by the Comunidad de Madrid through the call Research Grants for Young Investigators from Universidad Politécnica de Madrid (GENIUS:APOYO-JOVENES-21-TAXTYC-32-K61X37).
+
+This work is supported by project BEWORD (PID2021-126061OB-C43) funded by MCIN/AEI/10.13039/501100011033 and, as appropriate, by “ERDF A way of making Europe”, by the “European Union”, and by Programa Propio - Proyectos Semilla: Universidad Politécnica de Madrid (VSEMILLA22LFHE).
+
+We gratefully acknowledge valuable efforts from Tencent AI Lab who supports Chinese translation and annotation of datasets by funding and infrastructure.
+
+Thanks to THU-CoAI (Conversational AI groups from Tsinghua University) for providing their Chinese datasets as part of the challenge data.
+
+Thanks to Unbabel for providing the COMET MTQE scores annotations as part of the challenge data. This contribution was supported by national funds through *Fundação para a Ciência e a Tecnologia* (FCT) with references PRT/BD/152198/2021 and UIDB/50021/2020, and by the P2020 program MAIA led by Unbabel (LISBOA-01-0247-FEDER-045909).
+
+We also want to give thanks to MS Azure services (especially to Irving Kwong) for their sponsorship to continue processing new datasets that could be interesting for the dialogue community.
+
+This research project is supported by the NYU ChatEval Team led by João Sedoc.
+
+This research project is supported in part by a grant from Amazon to Alexander Rudnicky, Carnegie Mellon University.
+
+
+# References
 
 Deriu, J., Rodrigo, A., Otegi, A., Echegoyen, G., Rosset, S., Agirre, E., & Cieliebak, M. (2020). Survey on evaluation methods for dialogue systems. Artificial Intelligence Review, 1-56.
 
