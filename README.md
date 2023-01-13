@@ -78,6 +78,10 @@ This research project is supported by the NYU ChatEval Team led by João Sedoc.
 
 This research project is supported in part by a grant from Amazon to Alexander Rudnicky, Carnegie Mellon University.
 
+This work is supported by the European Commission through Project ASTOUND (101071191 — HORIZON-EIC-2021-PATHFINDERCHALLENGES-01)
+
+![alt text](./img/Logo_EC.png)
+
 
 # References
 
