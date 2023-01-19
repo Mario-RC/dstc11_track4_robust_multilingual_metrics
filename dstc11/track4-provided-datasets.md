@@ -51,7 +51,7 @@ Additionally, ~2k random H-H turns of CDial in Chinese were manually annotated b
 
 During the test phase, a new set of 2k turn-level manually curated multilingual corpus (Spanish and Chinese) together with their human-evaluation annotations will be provided to participants to test models for both tasks. This corpus will be manually checked to guarantee its quality and high correlation with the original dialogues. Besides, in order to check the generalization capabilities of the proposed metrics from the participant, the test data will include a new dataset of human-chatbot interactions and their annotations.
 
-# Datasets Statistics:
+# Datasets Statistics
 
 | Datasets<br/>Name | CHANEL | DSTC10 | CDIAL |
 | -------------- | :---: | :----: | :---: |
@@ -63,7 +63,7 @@ During the test phase, a new set of 2k turn-level manually curated multilingual 
 | Task 1 Set | Train | Dev, Test | Train
 | Task 2 Set | Train | Dev, Test | —
 
-# Datasets Information:
+# Datasets Information
 
 CHANEL dataset is Task 1 and Task 2 oriented. The source language is English.
 
