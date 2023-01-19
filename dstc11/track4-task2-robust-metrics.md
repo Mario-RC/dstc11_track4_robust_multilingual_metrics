@@ -33,7 +33,7 @@ On the one hand, there are the paraphrases of each turn from the original turn. 
 
 Each turn has multiple paraphrases generated with the `prithivida/parrot_parrot_paraphraser_on_T5` model. The model returns a different number of paraphrases depending on the phrase entered, as well as the levenshtein metric for each paraphrase. In case the model did not generate any paraphrases, the csv cell will contain a *None* string. In this case, back-translation is also a good option. In any case, the participant is free to decide what to do, use external methods, suppress the turn, suppress the dialog, etc.
 
-To run the Parrot library with the setting used in DSTC11, follow the steps below: https://github.com/jsedoc/Parrot_Paraphraser.
+To run the Parrot library with the setting used in DSTC11, follow the next steps: https://github.com/jsedoc/Parrot_Paraphraser.
 
 To correctly read the list of strings in the PARAPHRASIS column of each csv, use the following command lines:
 ```

@@ -11,18 +11,23 @@ Participants will develop effective automatic open-ended dialogue evaluation met
 For both tasks, proposed metrics are expected to show the following two important properties as indicated in (Deriu et al., 2019):
 
 Correlated to human judgments - the metrics should produce evaluation scores that well correlate to human judgments (scores) across multiple languages or alternative responses (i.e., back-translated or paraphrased).
+
 Explainable - the metrics should provide constructive and explicit feedback to the generative models in terms of the quality of their generated responses. For instance, if a generative model is contradicting itself, the evaluation metrics should signal such behavior to the generative models.
-Participants can propose their own metric or optionally improve two baseline evaluation metrics: MDD-Eval (Zhang et al, 2021) or deep AM-FM (Zhang et al, 2020). A leaderboard in the ChatEval platform will be provided allowing participants to check their progress.
+
+Participants can propose their own metric or optionally improve two baseline evaluation metrics: MDD-Eval (Zhang et al, 2021) or Deep AM-FM (Zhang et al, 2020). A leaderboard in the ChatEval platform will be provided allowing participants to check their progress.
 
 For each evaluation task, Spearman correlation will be computed to compare the proposed evaluation metrics against human judgments. A final average score will be calculated to rank the submitted evaluation metrics.
 
 For more details:
 
 * [Provided datasets](/dstc11/track4-provided-datasets.md)
-* [Task 2: Datasets format](/dstc11/track4-datasets-format.md)
+* [Datasets format](/dstc11/track4-datasets-format.md)
 * [Task 1: Metrics for multilingual data](/dstc11/track4-task1-metrics-multilingual-data.md)
 * [Task 2: Robust metrics](/dstc11/track4-task2-robust-metrics.md)
+* [Baseline model](/dstc11/track4-baseline.md)
 * [FAQ](/dstc11/track4-faq.md)
+
+For more information check the [Track Proposal](https://drive.google.com/file/d/1wHZdlz8JecDWiiJiwhP3VsKnbApdL6_e/view).
 
 # Schedule
 
@@ -34,11 +39,7 @@ For more details:
 * **Paper submission**: From March to May in 2023
 * **Workshop**: July, August or September in 2023
 
-# Baselines and Data Description
-
-For more information check the [Track Proposal](https://drive.google.com/file/d/1wHZdlz8JecDWiiJiwhP3VsKnbApdL6_e/view).
-
-## Registration Details
+# Registration Details
 
 For registration go to the [Registration Details section](https://chateval.org/dstc11/annex-registration-details) at the [ChatEval website](https://chateval.org/dstc11).
 
@@ -78,10 +79,11 @@ This research project is supported by the NYU ChatEval Team led by João Sedoc.
 
 This research project is supported in part by a grant from Amazon to Alexander Rudnicky, Carnegie Mellon University.
 
-This work is supported by the European Commission through Project ASTOUND (101071191 — HORIZON-EIC-2021-PATHFINDERCHALLENGES-01)
+Thanks to Karthik Ganesan, Sarik Ghazarian, James Hagerty, Zhang Chen and Alex Rudnicky for developing the baseline model as part of the challenge tasks.
+
+This work is supported by the European Commission through Project ASTOUND (101071191 — HORIZON-EIC-2021-PATHFINDERCHALLENGES-01).
 
 ![alt text](./img/Logo_EC.png)
-
 
 # References
 
