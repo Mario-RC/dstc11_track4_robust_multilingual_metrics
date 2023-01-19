@@ -24,7 +24,7 @@ For more details:
 * [Datasets format](/dstc11/track4-datasets-format.md)
 * [Task 1: Metrics for multilingual data](/dstc11/track4-task1-metrics-multilingual-data.md)
 * [Task 2: Robust metrics](/dstc11/track4-task2-robust-metrics.md)
-* [Baseline model](/dstc11/track4-baseline.md)
+* [Baseline model](/dstc11/track4-baseline-model.md)
 * [FAQ](/dstc11/track4-faq.md)
 
 For more information check the [Track Proposal](https://drive.google.com/file/d/1wHZdlz8JecDWiiJiwhP3VsKnbApdL6_e/view).
