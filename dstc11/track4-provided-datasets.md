@@ -2,13 +2,19 @@
 
 As development set, organizers will provide the following datasets identified during the [DSTC10 Track 5](https://chateval.org/dstc10) (Zhang et al, 2021), that sum up more than 35k turn-level human-annotations, which have been automatically translated to Spanish and Chinese, and back-translated both to English using [MS Azure](https://azure.microsoft.com/en-us/products/cognitive-services/translator/) services.
 
-* DSTC6 human evaluation data (Hori et al., 2017)
-* DSTC7 human evaluation data (Galley et al., 2019)
-* Persona-Chatlog dataset (See et al., 2019)
-* ChatEval dataset (Sedoc et al., 2019)
-* USR dataset (Mehri & Eskenazi, 2020)
-* FED dataset (Mehri & Eskenazi, 2020)
-* DSTC10 dataset (Zhang et al., 2021)
+* CONVAI2-GRADE (CG)</b> (Huang et al., 2020)
+* DAILYDIALOG-GRADE (DH)</b> (Huang et al., 2020)
+* DAILYDIALOG-GUPTA (DG)</b> (Gupta et al., 2019)
+* DAILYDIALOG-ZHAO (DZ)</b> (Zhao et al., 2020)
+* DSTC7 (D7)</b> (Galley et al., 2019)
+* EMPATHETIC-GRADE (EG)</b> (Huang et al., 2020)
+* FED-DIAL (FD)</b> (Mehri & Eskenazi, 2020b)
+* FED-TURN (FT)</b> (Mehri & Eskenazi, 2020b)
+* HUMOD (HM)</b> (Merdivan et al., 2020)
+* PERSONA-SEE (PS)</b> (See et al., 2019)
+* PERSONA-USR (PU)</b> (Mehri & Eskenazi, 2020a)
+* PERSONA-ZHAO (PZ)</b> (Zhao et al., 2020)
+* TOPICAL-USR (TU)</b> (Mehri & Eskenazi, 2020a)
 
 This development data can help participants to check the multilingualism or robustness capabilities of their trained models in terms of correlations with human-annotations. Additional databases, not mentioned here, will be added when available to increase the size of the benchmarking.
 
@@ -92,13 +98,19 @@ DSTC10 dataset is Task 1 and Task 2 oriented. The source language is English.
 
 | DSTC10 | Spanish<br/>Translation | Chinese<br/>Translation | English<br/>Translation | English<br/>Back-translation | Paraphrases | Sentiment<br/>Analysis | Content<br/>Moderate | Human<br/>Annotations |
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| DSTC6 | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
+| CONVAI2-GRADE | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
+| DAILYDIALOG-GRADE | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
+| DAILYDIALOG-GUPTA | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
+| DAILYDIALOG-ZHAO | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
 | DSTC7 | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Persona-Chatlog | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
-| ChatEval | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
-| USR | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
-| FED | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
-| DSTC10 | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
+| EMPATHETIC-GRADE | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
+| FED-DIAL | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
+| FED-TURN | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
+| HUMOD | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
+| PERSONA-SEE | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
+| PERSONA-USR | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
+| PERSONA-ZHAO | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
+| TOPICAL-USR | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
 
 CDIAL dataset is Task 1 oriented. The source language is Chinese.
 
@@ -141,6 +153,7 @@ See, A., Roller, S., Kiela, D., & Weston, J. (2019). What makes a good conversat
 Sedoc, J., Ippolito, D., Kirubarajan, A., Thirani, J., Ungar, L., & Callison-Burch, C. (2019, June). Chateval: A tool for chatbot evaluation. In Proceedings of the 2019 conference of the North American chapter of the association for computational linguistics (demonstrations) (pp. 60-65).
 
 Vinyals, O., & Le, Q. (2015). A neural conversational model. arXiv preprint arXiv:1506.05869.
+
 Lee, S., Lim, H., & Sedoc, J. (2020). An evaluation protocol for generative conversational systems. arXiv preprint arXiv:2010.12741.
 
 Mehri, S., & Eskenazi, M. (2020). USR: An Unsupervised and Reference Free Evaluation Metric for Dialog Generation. arXiv preprint arXiv:2005.00456.
