@@ -1,24 +1,6 @@
 # Provided Datasets
 
-As development set, organizers will provide the following datasets identified during the [DSTC10 Track 5](https://chateval.org/dstc10) (Zhang et al, 2021), that sum up more than 35k turn-level human-annotations, which have been automatically translated to Spanish and Chinese, and back-translated both to English using [MS Azure](https://azure.microsoft.com/en-us/products/cognitive-services/translator/) services.
-
-* CONVAI2-GRADE (CG)</b> (Huang et al., 2020)
-* DAILYDIALOG-GRADE (DH)</b> (Huang et al., 2020)
-* DAILYDIALOG-GUPTA (DG)</b> (Gupta et al., 2019)
-* DAILYDIALOG-ZHAO (DZ)</b> (Zhao et al., 2020)
-* DSTC7 (D7)</b> (Galley et al., 2019)
-* EMPATHETIC-GRADE (EG)</b> (Huang et al., 2020)
-* FED-DIAL (FD)</b> (Mehri & Eskenazi, 2020b)
-* FED-TURN (FT)</b> (Mehri & Eskenazi, 2020b)
-* HUMOD (HM)</b> (Merdivan et al., 2020)
-* PERSONA-SEE (PS)</b> (See et al., 2019)
-* PERSONA-USR (PU)</b> (Mehri & Eskenazi, 2020a)
-* PERSONA-ZHAO (PZ)</b> (Zhao et al., 2020)
-* TOPICAL-USR (TU)</b> (Mehri & Eskenazi, 2020a)
-
-This development data can help participants to check the multilingualism or robustness capabilities of their trained models in terms of correlations with human-annotations. Additional databases, not mentioned here, will be added when available to increase the size of the benchmarking.
-
-Additionally, after the organizers' participation in the [CHANEL@JSALT2020](https://github.com/CHANEL-JSALT-2020/datasets) workshop (Rudnicky et al., 2020) at John Hopkins University, they have automatically translated back-and-forth (using the same MS Azure translation service) a total of 18 well-known human-human dialogue datasets. The total amount of dialogues is 393k (approx. 3M turns).
+After the organizers' participation in the [CHANEL@JSALT2020](https://github.com/CHANEL-JSALT-2020/datasets) workshop (Rudnicky et al., 2020) at John Hopkins University, they have automatically translated back-and-forth (using the same MS Azure translation service) a total of 18 well-known human-human dialogue datasets. These data sets will be used as training data. The total amount of dialogues is 393k (approx. 3M turns).
 
 * DBDC (Higashinaka et al., 2016)
 * CMU_DoG (Zhou et al., 2018)
@@ -39,6 +21,24 @@ Additionally, after the organizers' participation in the [CHANEL@JSALT2020](http
 * Wizard of Wikipedia (Dinan et al., 2019)
 * Wochat (D'Haro et al., 2016)
 
+As development set, organizers will provide the following datasets identified during the [DSTC10 Track 5](https://chateval.org/dstc10) (Zhang et al, 2021), that sum up more than 35k turn-level human-annotations, which have been automatically translated to Spanish and Chinese, and back-translated both to English using [MS Azure](https://azure.microsoft.com/en-us/products/cognitive-services/translator/) services.
+
+* CONVAI2-GRADE (CG)</b> (Huang et al., 2020)
+* DAILYDIALOG-GRADE (DH)</b> (Huang et al., 2020)
+* DAILYDIALOG-GUPTA (DG)</b> (Gupta et al., 2019)
+* DAILYDIALOG-ZHAO (DZ)</b> (Zhao et al., 2020)
+* DSTC7 (D7)</b> (Galley et al., 2019)
+* EMPATHETIC-GRADE (EG)</b> (Huang et al., 2020)
+* FED-DIAL (FD)</b> (Mehri & Eskenazi, 2020b)
+* FED-TURN (FT)</b> (Mehri & Eskenazi, 2020b)
+* HUMOD (HM)</b> (Merdivan et al., 2020)
+* PERSONA-SEE (PS)</b> (See et al., 2019)
+* PERSONA-USR (PU)</b> (Mehri & Eskenazi, 2020a)
+* PERSONA-ZHAO (PZ)</b> (Zhao et al., 2020)
+* TOPICAL-USR (TU)</b> (Mehri & Eskenazi, 2020a)
+
+This development data can help participants to check the multilingualism or robustness capabilities of their trained models in terms of correlations with human-annotations. Additional databases, not mentioned here, will be added when available to increase the size of the benchmarking.
+
 Moreover, the datasets provided by [THU-COAI](https://github.com/thu-coai) group (Conversational AI groups from Tsinghua University) will be used, naming this set of data CDial. They contain open domain human-human dialogs. They are originally in Chinese and contain of 3,470 dialogs (approx. 130k turns).
 
 * ECM (Zhou et al., 2018)
@@ -57,10 +57,10 @@ Additionally, ~2k random H-H turns of CDial in Chinese were manually annotated b
 
 During the test phase, a new set of 2k turn-level manually curated multilingual corpus (Spanish and Chinese) together with their human-evaluation annotations will be provided to participants to test models for both tasks. This corpus will be manually checked to guarantee its quality and high correlation with the original dialogues. Besides, in order to check the generalization capabilities of the proposed metrics from the participant, the test data will include a new dataset of human-chatbot interactions and their annotations.
 
-# Datasets Statistics
+# Datasets Summary
 
 | Datasets<br/>Name | CHANEL | DSTC10 | CDIAL |
-| -------------- | :---: | :----: | :---: |
+| --- | :---: | :----: | :---: |
 | # Datsets | 18 | 7 | 3 |
 | Language | English, Spanish/Chinese translations,<br/>and English back-translation | English, Spanish/Chinese translations,<br/>and English back-translation | Chinese and English translations |
 | Dialogues Type | Human-Human Open-Domain | Human-Chatbot Open-Domain | Human-Human Open-Domain
@@ -69,48 +69,66 @@ During the test phase, a new set of 2k turn-level manually curated multilingual 
 | Task 1 Set | Train | Dev, Test | Train
 | Task 2 Set | Train | Dev, Test | —
 
+<!-- # Datasets Statistics
+
+| Dataset | No. Turns/Dialogues | No. Anno Qualities | No. Annos | AVG. Utts | AVG. Words per Utts |
+| --- | --- | --- | --- | --- | --- |
+| CONVAI2-GRADE (CG) | 300 | 1 | 3000 | 3.00 | 11.89 |
+| DAILYDIALOG-GRADE (DH) | 300 | 1 | 3000 | 3.00 | 12.25 |
+| DAILYDIALOG-GUPTA (DG) | 500 | 1 | 1500 | 4.92 | 12.36 |
+| DAILYDIALOG-ZHAO (DZ) | 900 | 4 | 14400 | 4.72 | 12.39 |
+| DSTC7 (D7) | 9900 | 1 | 29700 | 4.92 | 20.18 |
+| EMPATHETIC-GRADE (EG) | 300 | 1 | 3000 | 3.00 | 14.86 |
+| FED-DIAL (FD) | 125 | 11| 1364 | 12.72 | 8.70 |
+| FED-TURN (FT) | 375  | 9 | 3348 | 10.37 | 9.70 |
+| HUMOD (HM) | 9500 | 2 | 57000 | 3.95 | 4.31 |
+| PERSONA-SEE (PS) | 3316 | 9 | 29844 | 12.00 | 7.59 |
+| PERSONA-USR (PU) | 300 | 6 | 5400 | 9.30 | 11.87 |
+| PERSONA-ZHAO (PZ) | 900 | 1 | 3600 | 5.13 | 11.77 |
+| TOPICAL-USR (TU) | 360 | 6 | 6480 | 11.20 | 23.14 | -->
+
 # Datasets Information
 
 CHANEL dataset is Task 1 and Task 2 oriented. The source language is English.
 
-| CHANEL | Spanish<br/>Translation | Chinese<br/>Translation | English<br/>Translation | English<br/>Back-translation | Paraphrases | Sentiment<br/>Analysis | Content<br/>Moderate | Human<br/>Annotations |
-| --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| DBDC | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
-| CMU_DoG | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
-| Cornell Movie-Dialogs | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
-| DailyDialog | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | |
-| DECODE | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
-| EmotionLines | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
-| EmpathicDialogues | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | |
-| Holl-E | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
-| MEENA | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
-| MELD | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
-| MetalWOz | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
-| Movie-DiC | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
-| PersonaChat | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | |
-| SentimentLIAR | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
-| Switchboard Coherence | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
-| Topical-Chat | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | |
-| Wizard of Wikipedia | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | |
-| WOCHAT | ✔ | | | ✔ | ✔ | ✔ | ✔ | |
+| CHANEL | Spanish<br/>Translation | Chinese<br/>Translation | English<br/>Translation | English<br/>Back-translation | Paraphrases | Sentiment<br/>Analysis | Content<br/>Moderate | Human<br/>Annotations | Annotation<br/>Granularity |
+| --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| DBDC | ✔ | | | ✔ | ✔ | ✔ | ✔ | | Turn-level |
+| CMU_DoG | ✔ | | | ✔ | ✔ | ✔ | ✔ | | Turn-level |
+| Cornell Movie-Dialogs | ✔ | | | ✔ | ✔ | ✔ | ✔ | | Turn-level |
+| DailyDialog | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | | Turn-level |
+| DECODE | ✔ | | | ✔ | ✔ | ✔ | ✔ | | Turn-level |
+| EmotionLines | ✔ | | | ✔ | ✔ | ✔ | ✔ | | Turn-level |
+| EmpathicDialogues | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | | Turn-level |
+| Holl-E | ✔ | | | ✔ | ✔ | ✔ | ✔ | | Turn-level |
+| MEENA | ✔ | | | ✔ | ✔ | ✔ | ✔ | | Turn-level |
+| MELD | ✔ | | | ✔ | ✔ | ✔ | ✔ | | Turn-level |
+| MetalWOz | ✔ | | | ✔ | ✔ | ✔ | ✔ | | Turn-level |
+| Movie-DiC | ✔ | | | ✔ | ✔ | ✔ | ✔ | | Turn-level |
+| PersonaChat | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | | Turn-level |
+| SentimentLIAR | ✔ | | | ✔ | ✔ | ✔ | ✔ | | Turn-level |
+| Switchboard Coherence | ✔ | | | ✔ | ✔ | ✔ | ✔ | | Turn-level |
+| Topical-Chat | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | | Turn-level |
+| Wizard of Wikipedia | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | | Turn-level |
+| WOCHAT | ✔ | | | ✔ | ✔ | ✔ | ✔ | | Turn-level |
 
 DSTC10 dataset is Task 1 and Task 2 oriented. The source language is English.
 
-| DSTC10 | Spanish<br/>Translation | Chinese<br/>Translation | English<br/>Translation | English<br/>Back-translation | Paraphrases | Sentiment<br/>Analysis | Content<br/>Moderate | Human<br/>Annotations |
-| --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| CONVAI2-GRADE | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
-| DAILYDIALOG-GRADE | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
-| DAILYDIALOG-GUPTA | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
-| DAILYDIALOG-ZHAO | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
-| DSTC7 | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
-| EMPATHETIC-GRADE | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
-| FED-DIAL | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
-| FED-TURN | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
-| HUMOD | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
-| PERSONA-SEE | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
-| PERSONA-USR | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
-| PERSONA-ZHAO | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
-| TOPICAL-USR | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ |
+| DSTC10 | Spanish<br/>Translation | Chinese<br/>Translation | English<br/>Translation | English<br/>Back-translation | Paraphrases | Sentiment<br/>Analysis | Content<br/>Moderate | Human<br/>Annotations | Annotation<br/>Granularity |
+| --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| CONVAI2-GRADE (CG) | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ | Turn-level |
+| DAILYDIALOG-GRADE (DH) | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ | Turn-level |
+| DAILYDIALOG-GUPTA (DG) | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ | Turn-level |
+| DAILYDIALOG-ZHAO (DZ) | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ | Turn-level |
+| DSTC7 (D7) | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ | Turn-level |
+| EMPATHETIC-GRADE (EG) | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ | Turn-level |
+| FED-DIAL (FD) | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ | Dialogue-level |
+| FED-TURN (FT) | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ | Turn-level |
+| HUMOD (HU) | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ | Turn-level |
+| PERSONA-SEE (PS) | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ | Dialogue-level |
+| PERSONA-USR (PU) | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ | Turn-level |
+| PERSONA-ZHAO (PZ) | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ | Turn-level |
+| TOPICAL-USR (TU) | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | ✔ | Turn-level |
 
 CDIAL dataset is Task 1 oriented. The source language is Chinese.
 
