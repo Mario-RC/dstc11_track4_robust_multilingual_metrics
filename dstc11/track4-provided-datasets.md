@@ -53,9 +53,14 @@ Since the quality of the back-translated sentences can play an important role in
 
 Regarding the paraphrases, all the original English sentences of each dataset will have multiple paraphrases, as well as annotations so that each participant can evaluate the quality of each paraphrase. The model used will be [PARROT](https://github.com/jsedoc/Parrot_Paraphraser) (Damodaran P., 2021).
 
-Additionally, ~2k random H-H turns of CDial in Chinese were manually annotated by Tencent AI. Also, ~5k new H-C Chinese turns (~500 dialogues) were generated with three different SotA chatbots (Tencent's model, Microsoft's Xiaoice (Zhou et al., 2020) and Baidu's Plato (Bao et al., 2019)) and manually annotated by Tencent AI.
+Additionally, ~3k random H-H turns (~1k dialogues) of CDial in Chinese were manually annotated by Tencent AI. Also, ~5k new H-C Chinese turns (~500 dialogues) were generated with three different SotA chatbots (Tencent's model, Microsoft's Xiaoice (Zhou et al., 2020) and Baidu's Plato (Bao et al., 2019)). Both turn-level and dialog-level annotations were manually annotated by Tencent AI.
 
-During the test phase, a new set of 2k turn-level manually curated multilingual corpus (Spanish and Chinese) together with their human-evaluation annotations will be provided to participants to test models for both tasks. This corpus will be manually checked to guarantee its quality and high correlation with the original dialogues. Besides, in order to check the generalization capabilities of the proposed metrics from the participant, the test data will include a new dataset of human-chatbot interactions and their annotations.
+During the test phase, a new set of 2k turn-level (~700 dialog-level) manually curated multilingual corpus (Spanish and Chinese) along with their turn-level and dialog-level human evaluation annotations will be provided to participants to test models for both tasks. This corpus will be manually checked to guarantee its quality and high correlation with the original dialogues.
+
+Furthermore, in order to check the generalization capabilities of the proposed metrics from the participant, the test data will include a new dataset of human-chatbot interactions with ~2k turns (~60 dialogues) and the following dimensions (annotations) to evaluate:
+
+* Turn-level: Relevant, Appropriateness and Content Richness.
+* Dialogue-level: Overall, Coherence and Likeability/Engageness.
 
 # Datasets Summary
 
@@ -65,8 +70,8 @@ During the test phase, a new set of 2k turn-level manually curated multilingual 
 | Language | English, Spanish/Chinese translations,<br/>and English back-translation | English, Spanish/Chinese translations,<br/>and English back-translation | Chinese and English translations |
 | Dialogues Type | Human-Human Open-Domain | Human-Chatbot Open-Domain | Human-Human Open-Domain
 | # Dialogues/<br/>Utterances | + 390.000 / + 3.000.000 | + 3.000 / + 60.000 | + 3.470 / +130.000
-| Annotations | Sentiment analysis and Toxicity | Sentiment analysis and Toxicity<br/>Turn level human scores | Turn level human scores
-| Task 1 Set | Train | Dev, Test | Train
+| Annotations | Sentiment analysis and Toxicity | Sentiment analysis and Toxicity<br/>Turn/dialgue level human scores | Turn/dialgue level human scores
+| Task 1 Set | Train | Dev, Test | Train, Dev, Test
 | Task 2 Set | Train | Dev, Test | —
 
 <!-- # Datasets Statistics
