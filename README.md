@@ -31,12 +31,12 @@ For more information check the [Track Proposal](https://drive.google.com/file/d/
 
 # Schedule
 
-* **Training/Validation data release**: From November to December in 2022
-* **Test data release**: Middle of March in 2023
-* **Entry submission deadline**: Middle of March in 2023
-* **Submission of final results**: End of March in 2023
-* **Final result announcement**: Early of April in 2023
-* **Paper submission**: From March to May in 2023
+* **Training/Validation data release**: Dec 14, 2022
+* **Test data release**: Mar 29, 2023
+* **Entry submission deadline**: Apr 3, 2023
+* **Submission of final results**: Apr 6, 2023
+* **Final result announcement**: Apr 14, 2023
+* **Paper submission**: From April to May in 2023
 * **Workshop**: July, August or September in 2023
 
 # Registration Details
@@ -46,6 +46,32 @@ For registration go to the [Registration Details section](https://chateval.org/d
 There must be only one team per laboratory or research group. The members of the same team must be under a single registration, that is, the team leader must register his entire team by giving their e-mail addresses in addition to his own.
 
 Any updates and information about the tracks will be posted on the [DSTC11 official website](https://dstc11.dstc.community/), or check the [DSTC11 official website](https://dstc11.dstc.community/).
+
+# Submission Details
+
+Before submitting your results, do not forget to [Sign Up](https://my.chateval.org/accounts/signup/) on the ChatEval website. Only the team leader must register on ChatEval, with the same name and email address entered in the Microsoft Form. Once you have signed up, you can [Log In](https://my.chateval.org/accounts/login/) and [Submit](https://my.chateval.org/dstc11submit/) your  evaluations.
+
+There are four different evaluations to test the models, namely:
+
+* Task 1 - Turn-Level
+* Task 1 - Dialogue-Level
+* Task 2 - Turn-Level
+* Task 2 - Dialogue-Level
+
+Each task has annotations at turn-level and dialogue-level, so the models will be evaluated separately at turn-level and dialogue-level independently for each task, they will not be taken into account together at any level. That is, for Task 1 the models at turn-level and at dialogue-level will be evaluated separately, likewise, for Task 2 the models at turn-level and at dialogue-level will be evaluated separately.
+
+If you want, you can participate in as many evaluations as you want. Whether you only want to participate in one, several or all of the evaluations, the scores obtained will be independent, unrelated to the other scores, and will not be combined for the final score. There will be a table with the scores obtained for each of the 4 different evaluations.
+
+You can submit as many score files as you want for each evaluation, but only the last 5 files submitted for each type of evaluation in ChatEval will be valid and will count in the ranking to participate in the competition. Moreover, only the evaluations submitted by the team leader registered in the Microsoft form will be considered and count towards the competition.
+
+In order to submit test data evaluations, they must be named appropriately. Below is the correct way to name the test files that should be sent correctly annotated:
+
+* \<team_name>_task1_turn_v\<x>.csv
+* \<team_name>_task1_dial_v\<x>.csv
+* \<team_name>_task2_turn_v\<x>.csv
+* \<team_name>_task2_dial_v\<x>.csv
+
+Please specify clearly in the submission name which evaluation it is intended for, the team name in <team_name> and the submission version <x> to identify the submission.
 
 # Organizers
 

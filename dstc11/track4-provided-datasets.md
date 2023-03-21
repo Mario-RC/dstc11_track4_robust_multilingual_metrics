@@ -57,10 +57,7 @@ Additionally, ~3k random H-H turns (~1k dialogues) of CDial in Chinese were manu
 
 During the test phase, a new set of 2k turn-level (~700 dialog-level) manually curated multilingual corpus (Spanish and Chinese) along with their turn-level and dialog-level human evaluation annotations will be provided to participants to test models for both tasks. This corpus will be manually checked to guarantee its quality and high correlation with the original dialogues.
 
-Furthermore, in order to check the generalization capabilities of the proposed metrics from the participant, the test data will include a new dataset of human-chatbot interactions with ~2k turns (~60 dialogues) and the following dimensions (annotations) to evaluate:
-
-* Turn-level: Relevant, Appropriateness and Content Richness.
-* Dialogue-level: Overall, Coherence and Likeability/Engageness.
+Furthermore, in order to check the generalization capabilities of the proposed metrics from the participant, the test data will include a new dataset of human-chatbot interactions with ~2k turns (~60 dialogues).
 
 # Datasets Summary
 
@@ -147,6 +144,29 @@ CDIAL dataset is Task 1 oriented. The source language is Chinese.
 
 All data given follows the [Data Formats](/dstc11/track4-datasets-format.md) which provides guidelines on how to store, maintain and handle dialogue corpora.
 
+# Dimensions Evaluation
+
+Considering the annotations available in the development data, the test data will have the following dimensions (annotations) to evaluate in both Task 1 (English, Chinese and Spanish) and Task 2:
+
+* **Turn-level**: Appropriateness, Content Richness, Grammatical Correctness and Relevance
+* **Dialogue-level**: Coherence, Engageness/Likeability, Informativeness and Overall.
+
+The annotations will be evaluated and indicated individually (dimension by dimension), discriminating by dataset and language. In addition, a global score will be estimated by grouping all dimensions. This global value will be calculated separately at turn-level and dialogue-level for each task.
+
+A brief description of each dimension (Mehri et al., 2022) is shown below.
+
+Turn-level:
+* **Appropriateness** - The response is appropriate given the preceding dialogue.
+* **Content Richness** - The response is informative, with long sentences including multiple entities and conceptual or emotional words.
+* **Grammatical Correctness** - Responses are free of grammatical and semantic errors.
+* **Relevance** - Responses are on-topic with the immediate dialog history.
+
+Dialogue-level:
+* **Coherence** - Throughout the dialog, is the system maintaining a good conversation flow.
+* **Engageness/Likeability** - Throughout the dialogue, the system displays a likeable personality.
+* **Informativeness** - Throughout the dialog, the system provides unique and non-generic information.
+* **Overall** - The overall quality of and satisfaction with the dialog.
+
 # Annex: Existing Datasets for Benchmarking
 
 Correlation analysis on **DSTC6 human evaluation data** (Hori et al., 2017). The DSTC6 evaluation dataset contains generated responses from 20 systems for the 2000 dialogue contexts in the test set. Each generated response is annotated by 10 different Turkers using a 5-point Likert Scale. The annotation is based on whether the responses are relevant to the respective dialogue context. For each dialogue context, there are 11 gold reference responses including the original response.
@@ -157,7 +177,7 @@ Correlation analysis on **Persona-Chatlog dataset** (See et al., 2019). The Pers
  
 Correlation analysis on **USR dataset** (Mehri & Eskenazi, 2020). This evaluation dataset contains two parts, **USR-Persona** and **USR-Topical**. USR-Persona contains 60 test cases from the Persona-Chat (Zhang et al., 2018) domain. Each test case has a unique dialogue context. Three different generative models were trained on the PERSONA-CHAT dataset. The corresponding responses produced by these three generative models conditioning on the 60 dialogue contexts together with the original ground-truth and newly human written responses form a total of 300 context-response pairs. Each pair is annotated by three dialogue researchers along six aspects based on different Likert scales: understandability (0-1), naturalness (1-3), maintaining context (1-3), interestingness (1-3), using knowledge (0-1) and overall quality (1-5). USR-Topical contains 60 test cases from the Topical-Chat (Gopalakrishnan et al., 2019) domain. The setting is similar to USR-Persona.
 
-Correlation analysis on **FED dataset** (Mehri & Eskenazi, 2020). The FED dataset consists of 124 conversations, out of which 40 come from Meena, 44 come from Mitsuku and another 40 are drawn from human-human conversations. Quality annotations are performed at both the dialogue level and turn level. There were 9 dialogue aspects for turn-level annotation and 11 for dialog-level annotation. In total, the FED dataset includes 3348 turn-level and 1364 dialog-level data points, for a total of 4712.
+Correlation analysis on **FED dataset** (Mehri & Eskenazi, 2020). The FED dataset consists of 124 conversations, out of which 40 come from Meena, 44 come from Mitsuku and another 40 are drawn from human-human conversations. Quality annotations are performed at both the dialogue-level and turn-level. There were 9 dialogue aspects for turn-level annotation and 11 for dialog-level annotation. In total, the FED dataset includes 3348 turn-level and 1364 dialog-level data points, for a total of 4712.
 
 **The ChatEval dataset** (Sedoc et al., 2019) includes the Neural Conversational Model (NCM) and English as a Second Language (ESL) datasets. The NCM dataset is a collection of hand-crafted 200 single-turn prompts developed by Vinyals and Le (2015). The 200 ESL dialogue segments are from an English learning website. NCM and ESL datasets contain pairwise comparisons between system responses. NCM has 59 comparisons between 11 systems and 2 human baselines with at least 3 annotators for each prompt. The dataset has over 33K pairwise comparisons. ESL has 21 comparisons of 5 systems and a human baseline with just over 13K judgments (Lee, Lim, and Sedoc, 2020).
 
@@ -234,3 +254,5 @@ Damodaran, P. (2021). Parrot: Paraphrase generation for NLU.
 Zhou, L., Gao, J., Li, D., & Shum, H. Y. (2020). The design and implementation of xiaoice, an empathetic social chatbot. Computational Linguistics, 46(1), 53-93.
 
 Bao, S., He, H., Wang, F., Wu, H., & Wang, H. (2019). Plato: Pre-trained dialogue generation model with discrete latent variable. arXiv preprint arXiv:1910.07931.
+
+Mehri, S., Choi, J., D'Haro, L. F., Deriu, J., Eskenazi, M., Gasic, M., ... & Zhang, C. (2022). Report from the nsf future directions workshop on automatic evaluation of dialog: Research directions and challenges. arXiv preprint arXiv:2203.10012.

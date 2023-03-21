@@ -6,25 +6,23 @@ Representation of the directory tree structure:
 ```
 .
 └── DSTC_11_Track_4             # DSTC11 data
-    ├── task1_multilinguality   # Metrics for Multilingual Data data
-    │    └── data               # Train/Dev/Test data (SEG/Translation)
-    │         ├── train         # Train data (JSALT2020 datasets)
-    │         │   ├── en_es     # English/Spanish data
-    │         │   ├── en_zh     # English/Chinese data
-    │         │   └── zh_en     # Chinese/English data
-    │         ├── dev           # Dev data (DSTC10.T5 datasets)
-    │         │   ├── en_es     # English/Spanish data
-    │         │   └── en_zh     # English/Chinese data
-    │         ├── test          # Test data (DSTC10.T5 datasets)
-    │         │   ├── en_es     # English/Spanish data
-    │         │   └── en_zh     # English/Chinese data
-    │         └── README.md     # Task 1 data information
-    ├── task2_robustness        # Robust Metrics data
-    │    └── data               # Train/Dev/Test data (SEG/Paraphrases/Back-translation)
-    │         ├── train         # Train data (JSALT2020 datasets)
-    │         ├── dev           # Development data (DSTC10.T5 datasets)
-    │         ├── test          # Test data (DSTC10.T5 datasets)
-    │         └── README.md     # Task 2 data information
+    ├── task1                   # Metrics for Multilingual Data data
+    │       ├── train           # Train data (JSALT2020 datasets)
+    │       │   ├── en_es       # English/Spanish data
+    │       │   ├── en_zh       # English/Chinese data
+    │       │   └── zh_en       # Chinese/English data
+    │       ├── dev             # Dev data (DSTC10.T5 datasets)
+    │       │   ├── en_es       # English/Spanish data
+    │       │   └── en_zh       # English/Chinese data
+    │       ├── test            # Test data (DSTC10.T5 datasets)
+    │       │   ├── en_es       # English/Spanish data
+    │       │   └── en_zh       # English/Chinese data
+    │       └── README.md       # Task 1 data information
+    ├── task2                   # Robust Metrics data
+    │       ├── train           # Train data (JSALT2020 datasets)
+    │       ├── dev             # Development data (DSTC10.T5 datasets)
+    │       ├── test            # Test data (DSTC10.T5 datasets)
+    │       └── README.md       # Task 2 data information
     ├── metadata                # Auxiliary datasets annotations
     └── README.md               # General data information
 ```
