@@ -34,7 +34,6 @@ For more information check the [Track Proposal](https://drive.google.com/file/d/
 * **Training/Validation data release**: Dec 14, 2022
 * **Test data release**: Mar 29, 2023
 * **Entry submission deadline**: Apr 3, 2023
-* **Submission of final results**: Apr 6, 2023
 * **Final result announcement**: Apr 14, 2023
 * **Paper submission**: From April to May in 2023
 * **Workshop**: July, August or September in 2023
