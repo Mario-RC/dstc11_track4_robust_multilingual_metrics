@@ -29,11 +29,11 @@ For more details:
 
 For more information check the [Track Proposal](https://drive.google.com/file/d/1wHZdlz8JecDWiiJiwhP3VsKnbApdL6_e/view).
 
-# Schedule
+# Schedule 
 
 * **Training/Validation data release**: Dec 14, 2022
 * **Test data release**: Mar 29, 2023
-* **Entry submission deadline**: Apr 3, 2023
+* **Entry submission deadline**: Apr 3, 2023 (23.59 Anywhere on Earth (AoE), UTC-12)
 * **Final result announcement**: Apr 14, 2023
 * **Paper submission**: From April to May in 2023
 * **Workshop**: July, August or September in 2023
