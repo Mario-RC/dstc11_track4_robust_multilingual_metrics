@@ -22,8 +22,8 @@ For more details:
 
 * [Provided datasets](/dstc11/track4-provided-datasets.md)
 * [Datasets format](/dstc11/track4-datasets-format.md)
-* [Task 1: Metrics for multilingual data](/dstc11/track4-task1-metrics-multilingual-data.md)
-* [Task 2: Robust metrics](/dstc11/track4-task2-robust-metrics.md)
+* [Task 1: Multilingual Automatic Evaluation Metrics](/dstc11/track4-task1-multilingual-metrics.md)
+* [Task 2: Robust Automatic Evaluation Metrics](/dstc11/track4-task2-robust-metrics.md)
 * [Baseline model](/dstc11/track4-baseline-model.md)
 * [FAQ](/dstc11/track4-faq.md)
 
@@ -33,10 +33,10 @@ For more information check the [Track Proposal](https://drive.google.com/file/d/
 
 * **Training/Validation data release**: Dec 14, 2022
 * **Test data release**: Mar 29, 2023
-* **Entry submission deadline**: Apr 3, 2023 (23.59 Anywhere on Earth (AoE), UTC-12)
+* **Entry submission deadline**: Apr 3, 2023 (23:59 Anywhere on Earth (AoE), UTC-12)
 * **Final result announcement**: Apr 14, 2023
-* **Paper submission**: From April to May in 2023
-* **Workshop**: July, August or September in 2023
+* **Paper submission**: June 2nd, 2023
+* **Workshop**: September 11 or 12, at SIGDIAL x INLG 2023 in Prague, Czech Republic
 
 # Registration Details
 
@@ -78,6 +78,7 @@ Please specify clearly in the submission name which evaluation it is intended fo
 * Chen Zhang (National University of Singapore, Singapore)
 * Chengguang Tang (Tencent AI Lab, China)
 * Ke Shi (Tencent AI Lab, China)
+* Sarik Ghazarian (University of Southern California, USA)
 * João Sedoc (New York University, USA)
 * Luis F. D'Haro (Universidad Politécnica de Madrid, Spain)
 * Alexander Rudnicky (Carnegie Mellon University, USA)
@@ -85,6 +86,21 @@ Please specify clearly in the submission name which evaluation it is intended fo
 # Contact
 
 If you have further questions regarding the data, please let us know by the following email address at [dstc11-robust-multilingual-automatic-evaluation@googlegroups.com](dstc11-robust-multilingual-automatic-evaluation@googlegroups.com).
+
+# Citation
+
+Please cite the paper, code or data from DSTC 11 Track 4:
+```bibtex
+@inproceedings{rodriguezcantelar2023robust,
+    author    = "Mario Rodríguez-Cantelar and Chen Zhang and Chengguang Tang and Ke Shi and Sarik Ghazarian and João Sedoc and Luis Fernando D'Haro and Alexander Rudnicky",
+    title     = "Overview of Robust and Multilingual Automatic Evaluation Metrics for Open-Domain Dialogue Systems at DSTC 11 Track 4",
+    booktitle = "DSTC11: The Eleventh Dialog System Technology Challenge",
+    series    = "24th Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL)",
+    year      = 2023,
+    month     = "September",
+    address   = "Prague, Czechia"
+}
+```
 
 # Acknowledgement
 
