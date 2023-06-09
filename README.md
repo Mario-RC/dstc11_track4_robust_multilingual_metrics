@@ -91,7 +91,7 @@ If you have further questions regarding the data, please let us know by the foll
 
 Please cite the paper, code or data from DSTC 11 Track 4:
 ```bibtex
-@inproceedings{rodriguezcantelar2023robust,
+@inproceedings{rodriguezcantelar2023dstc11t4,
     author    = "Mario Rodríguez-Cantelar and Chen Zhang and Chengguang Tang and Ke Shi and Sarik Ghazarian and João Sedoc and Luis Fernando D'Haro and Alexander Rudnicky",
     title     = "Overview of Robust and Multilingual Automatic Evaluation Metrics for Open-Domain Dialogue Systems at DSTC 11 Track 4",
     booktitle = "DSTC11: The Eleventh Dialog System Technology Challenge",
