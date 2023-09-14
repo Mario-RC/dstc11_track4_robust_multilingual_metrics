@@ -71,23 +71,63 @@ Furthermore, in order to check the generalization capabilities of the proposed m
 | Task 1 Set | Train | Dev, Test | Train, Dev, Test
 | Task 2 Set | Train | Dev, Test | —
 
-<!-- # Datasets Statistics
+# Datasets Statistics
 
-| Dataset | No. Turns/Dialogues | No. Anno Qualities | No. Annos | AVG. Utts | AVG. Words per Utts |
-| --- | --- | --- | --- | --- | --- |
-| CONVAI2-GRADE (CG) | 300 | 1 | 3000 | 3.00 | 11.89 |
-| DAILYDIALOG-GRADE (DH) | 300 | 1 | 3000 | 3.00 | 12.25 |
-| DAILYDIALOG-GUPTA (DG) | 500 | 1 | 1500 | 4.92 | 12.36 |
-| DAILYDIALOG-ZHAO (DZ) | 900 | 4 | 14400 | 4.72 | 12.39 |
-| DSTC7 (D7) | 9900 | 1 | 29700 | 4.92 | 20.18 |
-| EMPATHETIC-GRADE (EG) | 300 | 1 | 3000 | 3.00 | 14.86 |
-| FED-DIAL (FD) | 125 | 11| 1364 | 12.72 | 8.70 |
-| FED-TURN (FT) | 375  | 9 | 3348 | 10.37 | 9.70 |
-| HUMOD (HM) | 9500 | 2 | 57000 | 3.95 | 4.31 |
-| PERSONA-SEE (PS) | 3316 | 9 | 29844 | 12.00 | 7.59 |
-| PERSONA-USR (PU) | 300 | 6 | 5400 | 9.30 | 11.87 |
-| PERSONA-ZHAO (PZ) | 900 | 1 | 3600 | 5.13 | 11.77 |
-| TOPICAL-USR (TU) | 360 | 6 | 6480 | 11.20 | 23.14 | -->
+| Name | #Turns | #Dialogues | Average Turn/Dial | Average Words/Turn | Annotation Granularity | Original Language | Translation |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Train** | | | | | | | |
+DBDC (Higashinaka et al., 2016) | 8,509 | 415 | 20.5 | 7.31 | Turn | En | Zh/Es |
+CMU_DoG (Zhou et al., 2018c) | 95,305 | 4,221 | 22.58 | 17.93 | Turn | En | Zh/Es |
+Cornell Movie-Dialogs (Danescu-Niculescu-Mizil and Lee, 2011) | 304,713 | 83,097 | 3.67 | 13.72 | Turn | En | Zh/Es |
+DailyDialog (Li et al., 2017) | 102,960 | 13,116 | 7.85 | 13.96 | Turn | En | Zh/Es |
+DECODE (Nie et al., 2020) | 296,105 | 35,426 | 8.36 | 15.05 | Turn | En | Zh/Es |
+EmotionLines (Hsu et al., 2018) | 14,503 | 1,000 | 14.50 | 10.53 | Turn | En | Zh/Es |
+EmpathicDialogues (Rashkin et al., 2019) | 107,220 | 24,850 | 4.31 | 15.88 | Turn | En | Zh/Es |
+Holl-E (Moghe et al., 2018) | 91,452 | 9,071 | 10.08 | 17.74 | Turn | En | Zh/Es |
+MEENA (Adiwardana et al., 2020) | 3,675 | 193 | 19.04 | 9.14 | Turn | En | Zh/Es |
+MELD (Poria et al., 2019) | 23,197 | 1,592 | 14.57 | 10.98 | Turn | En | Zh/Es |
+MetalWOz (Lee et al., 2019) | 432,036 | 37,884 | 11.40 | 8.47 | Turn | En | Zh/Es |
+Movie-DiC (Banchs, 2012) | 512,582 | 65,215 | 7.86 | 13.82 | Turn | En | Zh/Es |
+PersonaChat (Zhang et al., 2018a) | 162,064 | 10,907 | 14.86 | 11.72 | Turn | En | Zh/Es |
+SentimentLIAR (Upadhayay and Behzadan, 2020) | 12,781 | 12,781 | 1.00 | 20.16 | Turn | En | Zh/Es |
+Switchboard Coherence (Cervone and Riccardi, 2020) | 12,059 | 1,000 | 12.06 | 20.55 | Turn | En | Zh/Es |
+Topical-Chat (Gopalakrishnan et al., 2019) | 235,281 | 10,784 | 21.82 | 23.23 | Turn | En | Zh/Es |
+Wizard of Wikipedia (Dinan et al., 2019) | 201,999 | 22,311 | 9.05 | 18.83 | Turn | En | Zh/Es |
+Wochat (Haro et al., 2016) | 19,881 | 607 | 32.75 | 6.75 | Turn | En | Zh/Es |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+Total | 2,636,322 | 334,470 | 236.26 | 255.77 | | |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **Development** | | | | | | | |
+ConvAI2-GRADE (Huang et al., 2020) | 1,800 | 600 | 3.0 | 12.07 | Turn | En | Zh/Es |
+DailyDialog-GRADE (Huang et al., 2020) | 900 | 300 | 3.0 | 12.60 | Turn | En | Zh/Es |
+DailyDialog-GUPTA (Gupta et al., 2019) | 2,460 | 500 | 4.92 | 12.37 | Turn | En | Zh/Es |
+DailyDialog-ZHAO (Zhao et al., 2020) | 4,248 | 900 | 4.72 | 12.41 | Turn | En | Zh/Es |
+DSTC7 (Galley et al., 2019) | 34,650 | 9,990 | 3.47 | 15.39 | Turn | En | Zh/Es |
+Empathetic-GRADE (Huang et al., 2020) | 900 | 300 | 3.0 | 16.65 | Turn | En | Zh/Es |
+FED-Dial (Mehri and Eskenazi, 2020a)) | 1,715 | 125 | 13.72 | 11.1 | Dial | En | Zh/Es |
+FED-Turn (Mehri and Eskenazi, 2020a)) | 3,888 | 375 | 10.37 | 10.78 | Turn | En | Zh/Es |
+HUMOD (Merdivan et al., 2020) | 37,468 | 9,499 | 3.94 | 7.97 | Turn | En | Zh/Es |
+Persona-SEE (See et al., 2019) | 39,792 | 3,316 | 12.0 | 9.0 | Dial | En | Zh/Es |
+PersonaChat-USR (Mehri and Eskenazi, 2020b) | 2,790 | 300 | 9.3 | 12.08 | Turn | En | Zh/Es |
+PersonaChat-ZHAO (Zhao et al., 2020) | 4,614 | 900 | 5.13 | 12.06 | Turn | En | Zh/Es |
+TOPICAL-USR (Mehri and Eskenazi, 2020b) | 4,032 | 360 | 11.2 | 23.16 | Turn | En | Zh/Es |
+ECM-Eval (Zhou et al., 2018a) | 3,004 | 1,502 | 2.0 | 13.13 | Turn | Zh | En |
+KdConv-Eval (Zhou et al., 2020a) | 3,499 | 354 | 9.88 | 21.11 | Turn | Zh | En |
+LCCC-Eval (Wang et al., 2020a) | 3,009 | 589 | 5.11 | 11.72 | Turn | Zh | En |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+Total | 148,769 | 29,910 | 104.76 | 212.64 | | |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **Test** | | | | | | | |
+BlenderBot3 (Giorgi et al., 2023; Shuster et al., 2022) | 679 | 21 | 32.33 | 16.96 | Turn/Dial | En | Zh/Es |
+ChatGPT (Giorgi et al., 2023; Radford et al., 2018) | 462 | 21 | 22 | 91.07 | Turn/Dial | En | Zh/Es |
+GPT-3.5 (Giorgi et al., 2023; Brown et al., 2020) | 560 | 17 | 32.94 | 23.73 | Turn/Dial | En | Zh/Es |
+HCChinese | 2,017 | 187 | 10.79 | 8.08 | Turn/Dial | Zh | En |
+ChatEval (Sedoc et al., 2019) | 400 | 200 | 2 | 8.13 | Turn | En | Zh/Es |
+DSTC10 (Zhang et al., 2022c) | 112 | 28 | 4 | 14 | Turn | En | Zh/Es |
+JSALT (Rudnicky et al., 2020) | 46 | 13 | 3.54 | 17.26 | Turn | En | Zh/Es |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+Total | 4,276 | 487 | 107.60 | 179.23 | | |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 
 # Datasets Information
 
