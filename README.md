@@ -20,12 +20,12 @@ For each evaluation task, Spearman correlation will be computed to compare the p
 
 For more details:
 
-* [Provided datasets](/dstc11/track4-provided-datasets.md)
-* [Datasets format](/dstc11/track4-datasets-format.md)
-* [Task 1: Multilingual Automatic Evaluation Metrics](/dstc11/track4-task1-multilingual-metrics.md)
-* [Task 2: Robust Automatic Evaluation Metrics](/dstc11/track4-task2-robust-metrics.md)
-* [Baseline model](/dstc11/track4-baseline-model.md)
-* [FAQ](/dstc11/track4-faq.md)
+* [Provided datasets](./dstc11/track4-provided-datasets.md)
+* [Datasets format](./dstc11/track4-datasets-format.md)
+* [Task 1: Multilingual Automatic Evaluation Metrics](./dstc11/track4-task1-multilingual-metrics.md)
+* [Task 2: Robust Automatic Evaluation Metrics](./dstc11/track4-task2-robust-metrics.md)
+* [Baseline model](./dstc11/track4-baseline-model.md)
+* [FAQ](./dstc11/track4-faq.md)
 
 For more information check the [Track Proposal](https://drive.google.com/file/d/1wHZdlz8JecDWiiJiwhP3VsKnbApdL6_e/view).
 
