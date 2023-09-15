@@ -182,7 +182,7 @@ CDIAL dataset is Task 1 oriented. The source language is Chinese.
 
 # Data Format
 
-All data given follows the [Data Formats](/dstc11/track4-datasets-format.md) which provides guidelines on how to store, maintain and handle dialogue corpora.
+All data given follows the [Data Formats](./dstc11/track4-datasets-format.md) which provides guidelines on how to store, maintain and handle dialogue corpora.
 
 # Dimensions Evaluation
 
