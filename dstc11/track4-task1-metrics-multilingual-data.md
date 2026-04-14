@@ -48,7 +48,7 @@ Since there are no references, the translations should be scored using a QE (Qua
 
 [WMT21](https://aclanthology.org/2021.wmt-1.111):&nbsp; `wmt21-comet-qe-mqm`
 
-[WMT22](https://arxiv.org/pdf/2209.06243.pdf):&nbsp; available soon
+[WMT22](https://arxiv.org/pdf/2209.06243.pdf):&nbsp; `wmt22-comet-da`
 
 ```
 from comet import download_model, load_from_checkpoint
@@ -64,10 +64,6 @@ seg_scores,_ = model.predict(data, batch_size=16, gpus=1)
 # Cosine Similarity
 
 To calculate cosine similarity, sentence embeddings were generated using the [SentenceTransformer](https://www.sbert.net/) library. For the columns COS_SIM_MULTI_1_ST and COS_SIM_MULTI_2_ST the multilingual models used are `distiluse-base-multilingual-cased-v1` and `paraphrase-xlm-r-multilingual-v1`, respectively. The cosine similarity was then calculated using the formula:
-
-```math
-CosineSimilarity(x, y) = 1 - CosineDistance(x, y)
-```
 
 ```math
 CosineSimilarity(x, y) = 1 - CosineDistance(x, y)
