@@ -16,11 +16,11 @@ Download `DSTC_11_Track_4.zip` from Hugging Face and keep the extracted dataset 
 .
 ├── README.md
 ├── LICENSE
+├── data/         # local dataset location; ignored except instructions
+├── docs/         # data policy and regeneration notes
 ├── dstc11/       # original Track 4 documentation
 ├── img/          # public documentation images
-├── tools/        # translation, metadata, MTQE, and paraphrase utilities
-├── data/         # local dataset location; ignored except instructions
-└── docs/         # data policy and regeneration notes
+└── tools/        # translation, metadata, MTQE, and paraphrase utilities
 ```
 
 ## Track Overview
