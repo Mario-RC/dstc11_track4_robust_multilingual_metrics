@@ -1,0 +1,59 @@
+# Python/cache artifacts
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+.agents/
+.codex/
+.env
+.env.*
+*.key
+*.pem
+*.secret
+secrets/
+private/
+
+# Local datasets. Data is distributed through Hugging Face, not GitHub.
+data/*
+!data/README.md
+!data/.gitkeep
+
+# Large/intermediate MTQE artifacts kept locally.
+tools/mtqe/legacy/
+tools/mtqe/data/
+tools/mtqe/logs/
+tools/mtqe/results/
+tools/mtqe/mtqe/
+outputs/
+
+# Azure metadata checkpoints and local runs.
+tools/metadata/records/
+tools/metadata/outputs/
+
+# Large/intermediate paraphrase artifacts kept locally.
+tools/paraphrase/legacy/
+tools/paraphrase/Parrot_Paraphraser/
+
+# Historical notebooks/scripts are kept locally only. Some legacy notebooks may
+# contain old executed cells with credentials and must never be published.
+tools/translation/legacy/
+tools/translation/legacy_notebooks/
+tools/**/*.ipynb
+
+# Common local archives/model files.
+*.zip
+*.tar
+*.tar.gz
+*.pkl
+*.npy
+*.pt
+*.ckpt
+*.bin
+
+# Spreadsheet files can carry document properties, authors, hidden sheets, and
+# local paths. Prefer sanitized CSV exports unless a workbook is explicitly
+# reviewed for publication.
+*.xls
+*.xlsx
+*.xlsm
+*.ods
