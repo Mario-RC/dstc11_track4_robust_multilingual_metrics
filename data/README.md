@@ -8,6 +8,21 @@ Download the public dataset release from Hugging Face and place it here when wor
 data/DSTC_11_Track_4/
 ```
 
+Recommended download command from the repository root. It requires `huggingface_hub`:
+
+```bash
+python - <<'PY'
+from huggingface_hub import snapshot_download
+
+snapshot_download(
+    repo_id="mario-rc/dstc11.t4",
+    repo_type="dataset",
+    allow_patterns=["DSTC_11_Track_4/**"],
+    local_dir="data",
+)
+PY
+```
+
 The public dataset reference is:
 
 ```text

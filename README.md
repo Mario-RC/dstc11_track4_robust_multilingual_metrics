@@ -8,7 +8,22 @@ Dataset files are not stored in GitHub. They are distributed through Hugging Fac
 
 https://huggingface.co/datasets/mario-rc/dstc11.t4
 
-Download `DSTC_11_Track_4.zip` from Hugging Face and keep the extracted dataset locally under `data/DSTC_11_Track_4/` when needed. The public Hugging Face release is intended for open train/development data; held-out test data is not included there.
+Download the public dataset files from Hugging Face into `data/DSTC_11_Track_4/` when needed. The command below requires `huggingface_hub`:
+
+```bash
+python - <<'PY'
+from huggingface_hub import snapshot_download
+
+snapshot_download(
+    repo_id="mario-rc/dstc11.t4",
+    repo_type="dataset",
+    allow_patterns=["DSTC_11_Track_4/**"],
+    local_dir="data",
+)
+PY
+```
+
+The public Hugging Face release is intended for open train/development data; held-out test data is not included there.
 
 ## Repository Layout
 

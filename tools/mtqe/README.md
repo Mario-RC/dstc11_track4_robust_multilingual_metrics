@@ -10,7 +10,7 @@ Use the public dataset from Hugging Face as input:
 https://huggingface.co/datasets/mario-rc/dstc11.t4
 ```
 
-Place the extracted dataset locally under:
+Place the downloaded dataset locally under:
 
 ```text
 data/DSTC_11_Track_4/

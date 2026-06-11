@@ -6,10 +6,25 @@ This repository intentionally keeps large data files out of GitHub. The public s
 https://huggingface.co/datasets/mario-rc/dstc11.t4
 ```
 
-Download `DSTC_11_Track_4.zip` from Hugging Face, extract it locally, and place the dataset under:
+Download the public dataset files from Hugging Face into:
 
 ```text
 data/DSTC_11_Track_4/
+```
+
+Recommended download command. It requires `huggingface_hub`:
+
+```bash
+python - <<'PY'
+from huggingface_hub import snapshot_download
+
+snapshot_download(
+    repo_id="mario-rc/dstc11.t4",
+    repo_type="dataset",
+    allow_patterns=["DSTC_11_Track_4/**"],
+    local_dir="data",
+)
+PY
 ```
 
 The `data/` directory is ignored by Git except for `data/README.md`.
@@ -131,7 +146,7 @@ These steps may incur Azure costs. Never commit real service keys, executed note
 
 ## What May Require Paid Services
 
-Regenerating the original translations, backtranslations, Content Moderator metadata, or sentiment metadata from raw text may require external paid services, depending on the provider used. The public train/development release already includes the open data needed for most reuse cases, so normal users should download it from Hugging Face instead of re-running paid service jobs.
+Regenerating the original translations, backtranslations, Content Moderator metadata, or sentiment metadata from raw text may require external paid services, depending on the provider used. The public train/development release already includes the open data needed for most reuse cases, so normal users should use the released Hugging Face files instead of re-running paid service jobs.
 
 ## What Goes to GitHub
 
