@@ -196,25 +196,21 @@ def run(args: argparse.Namespace) -> Path | None:
             LOGGER.info("Skipping existing checkpoint %s", record_path)
             continue
 
-        rows: list[dict[str, str]] = []
+        rows: list[dict[str, object]] = []
         for batch in checkpoint:
             texts = [str(frame.iloc[row_idx][args.seg_col]) for row_idx in batch]
             payload = translate_batch(session, url + params, headers, texts, args.timeout)
 
             for row_idx, response_item in zip(batch, payload):
                 row_id = str(frame.iloc[row_idx][args.uid_col])
-                source_text = str(frame.iloc[row_idx][args.seg_col])
                 translated, profanity = extract_translation(response_item, row_id)
-                rows.append(
-                    {
-                        args.uid_col: row_id,
-                        args.seg_col: source_text,
-                        args.translation_col: translated,
-                        args.profanity_col: profanity,
-                    }
-                )
+                row = frame.iloc[row_idx].to_dict()
+                row[args.translation_col] = translated
+                row[args.profanity_col] = profanity
+                rows.append(row)
 
-        pd.DataFrame(rows).to_csv(record_path, index=False, encoding="utf-8-sig")
+        output_columns = [*frame.columns, args.translation_col, args.profanity_col]
+        pd.DataFrame(rows, columns=output_columns).to_csv(record_path, index=False, encoding="utf-8-sig")
         LOGGER.info("Wrote checkpoint %s/%s: %s", checkpoint_idx + 1, len(checkpoints), record_path)
 
     pieces = [
