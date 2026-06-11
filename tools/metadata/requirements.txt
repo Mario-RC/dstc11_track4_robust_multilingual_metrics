@@ -1,0 +1,4 @@
+pandas
+azure-ai-textanalytics
+azure-cognitiveservices-vision-contentmoderator
+msrest
