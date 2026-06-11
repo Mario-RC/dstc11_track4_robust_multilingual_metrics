@@ -1,0 +1,3 @@
+UID,SID,SEG,PARAPHRASES
+SAMPLE-000001-0000,user,"Hello, how are you?","['Hi, how are you doing?', 'Hello, how is it going?']"
+SAMPLE-000001-0001,system,"I am fine, thank you.","['I am doing well, thanks.', 'I feel fine, thank you.']"
