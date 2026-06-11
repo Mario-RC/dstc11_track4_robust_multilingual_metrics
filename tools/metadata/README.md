@@ -21,7 +21,7 @@ Run a dry check without calling Azure:
 
 ```bash
 python tools/metadata/content_moderator.py \
-  --input tools/translation/examples/sample_main.csv \
+  --input tools/metadata/examples/sample_input.csv \
   --output outputs/metadata/sample_content_moderator.csv \
   --dry-run
 ```
@@ -56,7 +56,7 @@ Run a dry check without calling Azure:
 
 ```bash
 python tools/metadata/sentiment_analytics.py \
-  --input tools/translation/examples/sample_main.csv \
+  --input tools/metadata/examples/sample_input.csv \
   --utterance-output outputs/metadata/sample_utterance_sentiment_analytics.csv \
   --sentence-output outputs/metadata/sample_sentence_sentiment_analytics.csv \
   --dry-run

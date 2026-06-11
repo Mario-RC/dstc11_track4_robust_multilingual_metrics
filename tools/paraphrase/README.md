@@ -10,7 +10,7 @@ Use the Hugging Face dataset as the input source and write generated artifacts u
 
 ```bash
 python tools/paraphrase/generate_paraphrases.py \
-  --input tools/translation/examples/sample_main.csv \
+  --input tools/paraphrase/examples/sample_input.csv \
   --output outputs/sample_paraphrases.csv \
   --text-col SEG \
   --use-gpu
