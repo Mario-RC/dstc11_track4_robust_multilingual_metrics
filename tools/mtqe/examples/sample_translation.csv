@@ -1,0 +1,3 @@
+UID,SID,SEG,TRANSLATION,BACKTRANSLATION
+SAMPLE-000001-0000,user,"Hello, how are you?","Hola, como estas?","Hello, how are you?"
+SAMPLE-000001-0001,system,"I am fine, thank you.","Estoy bien, gracias.","I am fine, thank you."
