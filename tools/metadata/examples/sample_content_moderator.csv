@@ -1,0 +1,3 @@
+UID,SEG,profanity_terms,sexually_explicit_adult_score,sexually_suggestive_mature_score,offensive_score,review_recommended
+SAMPLE-000001-0000,"Hello, how are you?",None,0.0,0.0,0.0,False
+SAMPLE-000001-0001,"I am fine, thank you.",None,0.0,0.0,0.0,False

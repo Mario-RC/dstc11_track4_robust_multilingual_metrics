@@ -26,6 +26,12 @@ python tools/metadata/content_moderator.py \
   --dry-run
 ```
 
+A small example output is available at:
+
+```text
+tools/metadata/examples/sample_content_moderator.csv
+```
+
 Run the real job:
 
 ```bash
@@ -54,6 +60,13 @@ python tools/metadata/sentiment_analytics.py \
   --utterance-output outputs/metadata/sample_utterance_sentiment_analytics.csv \
   --sentence-output outputs/metadata/sample_sentence_sentiment_analytics.csv \
   --dry-run
+```
+
+Small example outputs are available at:
+
+```text
+tools/metadata/examples/sample_utterance_sentiment_analytics.csv
+tools/metadata/examples/sample_sentence_sentiment_analytics.csv
 ```
 
 Both scripts write checkpoint CSV files under a local `records/` directory next to the output files. Use `--resume` to reuse existing checkpoints.
