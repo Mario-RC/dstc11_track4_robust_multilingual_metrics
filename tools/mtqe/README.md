@@ -20,14 +20,24 @@ data/DSTC_11_Track_4/
 
 ## Regenerate Scores
 
+The files under `examples/` are small synthetic examples used to document the
+expected input and output schemas.
+
 MTQE expects an already translated file with source, translation, and optionally
-backtranslation columns. The local example is named as an MTQE input to avoid
-confusing it with the translation tool output:
+backtranslation columns. `sample_mtqe_input.csv` is the minimal input before
+similarity scores are computed:
 
 ```bash
 python tools/mtqe/compute_translation_similarity.py \
   --input tools/mtqe/examples/sample_mtqe_input.csv \
   --output outputs/sample_mtqe_scored.csv
+```
+
+`sample_mtqe_scored.csv` shows the corresponding scored format after the
+derived similarity annotations have been added:
+
+```text
+tools/mtqe/examples/sample_mtqe_scored.csv
 ```
 
 Dataset example:
