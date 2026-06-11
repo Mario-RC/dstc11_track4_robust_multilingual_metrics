@@ -10,14 +10,14 @@ export TRANSLATOR_TEXT_ENDPOINT="https://api.cognitive.microsofttranslator.com/"
 export TRANSLATOR_TEXT_REGION="westeurope"
 ```
 
-`examples/sample_main.csv` is a minimal input file. It contains the source text
+`examples/sample_input.csv` is a minimal input file. It contains the source text
 to translate, but not the translated output yet.
 
 Example:
 
 ```bash
 python tools/translation/translate_text.py \
-  --csv-path tools/translation/examples/sample_main.csv \
+  --csv-path tools/translation/examples/sample_input.csv \
   --save-path outputs/sample_translation_en_es.csv \
   --from-language en \
   --to-language es \
