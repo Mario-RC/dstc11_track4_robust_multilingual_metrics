@@ -4,6 +4,12 @@ This directory contains clean utilities for paraphrase generation and paraphrase
 
 Use the Hugging Face dataset as the input source and write generated artifacts under `outputs/` or another ignored local directory. See [../../docs/data-and-regeneration.md](../../docs/data-and-regeneration.md).
 
+Install the paraphrase tool dependencies when you need generation or similarity scoring:
+
+```bash
+python -m pip install -r tools/paraphrase/requirements.txt
+```
+
 ## Generate Paraphrases
 
 `generate_paraphrases.py` uses an installed Parrot package when available. If not, it can use the local `Parrot_Paraphraser/` snapshot through `--parrot-root`; that snapshot is preserved locally but ignored by Git.

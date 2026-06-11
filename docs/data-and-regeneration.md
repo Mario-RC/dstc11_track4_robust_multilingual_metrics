@@ -39,10 +39,10 @@ tools/paraphrase/compute_paraphrase_similarity.py
 
 ## Regenerate Translation Similarity Scores
 
-Install the shared dependencies:
+Install the MTQE dependencies:
 
 ```bash
-python -m pip install -r tools/requirements.txt
+python -m pip install -r tools/mtqe/requirements.txt
 ```
 
 Then run the MTQE similarity script on any multilingual CSV from the downloaded dataset:
@@ -75,6 +75,12 @@ python tools/mtqe/compute_translation_similarity.py \
 These scores are regenerated locally with sentence-transformer models. No paid API is required for this step, although downloading models requires internet access the first time.
 
 ## Regenerate Paraphrase Similarity Scores
+
+Install the paraphrase dependencies:
+
+```bash
+python -m pip install -r tools/paraphrase/requirements.txt
+```
 
 Use the paraphrase scoring script on any Task 2 file with `SEG` and `PARAPHRASES` columns:
 

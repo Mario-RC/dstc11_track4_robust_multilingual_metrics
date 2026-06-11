@@ -4,10 +4,17 @@ This directory contains the lightweight, publishable utilities used around DSTC1
 
 ## Setup
 
-Install the shared Python dependencies before running the local CSV utilities:
+Install the shared lightweight Python dependencies before running translation or CSV utilities:
 
 ```bash
 python -m pip install -r tools/requirements.txt
+```
+
+MTQE and paraphrase similarity use sentence-transformer models and have their own optional dependencies:
+
+```bash
+python -m pip install -r tools/mtqe/requirements.txt
+python -m pip install -r tools/paraphrase/requirements.txt
 ```
 
 Paraphrase generation also requires Parrot or the local `Parrot_Paraphraser/` snapshot, which is kept out of Git.

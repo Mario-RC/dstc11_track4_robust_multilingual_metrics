@@ -2,4 +2,3 @@ pandas
 requests
 tqdm
 numpy
-sentence-transformers
