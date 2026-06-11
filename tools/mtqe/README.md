@@ -20,7 +20,17 @@ data/DSTC_11_Track_4/
 
 ## Regenerate Scores
 
-Example:
+MTQE expects an already translated file with source, translation, and optionally
+backtranslation columns. The local example is named as an MTQE input to avoid
+confusing it with the translation tool output:
+
+```bash
+python tools/mtqe/compute_translation_similarity.py \
+  --input tools/mtqe/examples/sample_mtqe_input.csv \
+  --output outputs/sample_mtqe_scored.csv
+```
+
+Dataset example:
 
 ```bash
 python tools/mtqe/compute_translation_similarity.py \
