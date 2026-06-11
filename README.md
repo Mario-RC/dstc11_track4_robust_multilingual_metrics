@@ -2,7 +2,28 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-# Track Overview
+This repository is the consolidated DSTC11 Track 4 project. It keeps the original challenge documentation as the central structure and adds the local processing utilities needed to reproduce translation, metadata, MTQE, and paraphrase-related preparation steps.
+
+Dataset files are not stored in GitHub. They are distributed through Hugging Face:
+
+https://huggingface.co/datasets/mario-rc/dstc11.t4
+
+Download `DSTC_11_Track_4.zip` from Hugging Face and keep the extracted dataset locally under `data/DSTC_11_Track_4/` when needed. The public Hugging Face release is intended for open train/development data; held-out test data is not included there.
+
+## Repository Layout
+
+```text
+.
+├── README.md
+├── LICENSE
+├── dstc11/       # original Track 4 documentation
+├── img/          # public documentation images
+├── tools/        # translation, metadata, MTQE, and paraphrase utilities
+├── data/         # local dataset location; ignored except instructions
+└── docs/         # data policy and regeneration notes
+```
+
+## Track Overview
 
 This track consists of two tasks which are explained in more detail below:
 
@@ -22,14 +43,43 @@ For more details:
 
 * [Provided datasets](./dstc11/track4-provided-datasets.md)
 * [Datasets format](./dstc11/track4-datasets-format.md)
-* [Task 1: Multilingual Automatic Evaluation Metrics](./dstc11/track4-task1-multilingual-metrics.md)
+* [Task 1: Multilingual Automatic Evaluation Metrics](./dstc11/track4-task1-metrics-multilingual-data.md)
 * [Task 2: Robust Automatic Evaluation Metrics](./dstc11/track4-task2-robust-metrics.md)
 * [Baseline model](./dstc11/track4-baseline-model.md)
 * [FAQ](./dstc11/track4-faq.md)
 
 For more information check the [Track Proposal](https://drive.google.com/file/d/1wHZdlz8JecDWiiJiwhP3VsKnbApdL6_e/view).
 
-# Schedule 
+## Data Policy
+
+Dataset files are kept outside GitHub to avoid uploading large local data artifacts. GitHub should contain documentation, reusable scripts, and lightweight project metadata only. Local copies of `data/DSTC_11_Track_4/`, generated outputs, logs, model caches, and historical workspaces are ignored through `.gitignore`.
+
+Use Hugging Face as the source of truth for the public dataset release:
+
+```text
+https://huggingface.co/datasets/mario-rc/dstc11.t4
+```
+
+The Hugging Face release should not include held-out test data. If test data is needed for research or evaluation, contact the organizers through the address listed in the [Contact](#contact) section.
+
+See [data/README.md](./data/README.md) for local placement instructions.
+
+`tools/mtqe/data/` is a local historical cache and is also ignored. Derived similarity scores can be regenerated from the Hugging Face dataset with the scripts in `tools/`. See [Data and Regeneration](./docs/data-and-regeneration.md).
+
+## Processing Tools
+
+The `tools/` directory contains cleaned, publishable utilities that complement the original challenge repository:
+
+* `tools/translation/translate_text.py` translates CSV text columns with Azure Translator using environment variables for credentials.
+* `tools/metadata/content_moderator.py` regenerates Azure Content Moderator metadata from local CSV files.
+* `tools/metadata/sentiment_analytics.py` regenerates Azure Text Analytics sentiment metadata from local CSV files.
+* `tools/mtqe/compute_translation_similarity.py` computes sentence-embedding similarity scores for source, translation, and backtranslation columns.
+* `tools/paraphrase/generate_paraphrases.py` generates paraphrases with Parrot when available locally or installed.
+* `tools/paraphrase/compute_paraphrase_similarity.py` computes similarity scores between source turns and generated paraphrases.
+
+Historical notebooks, old ad-hoc scripts, generated data, logs, environments, and local model snapshots are preserved locally when useful for provenance, but are ignored and should not be uploaded to GitHub.
+
+## Schedule 
 
 * **Training/Validation data release**: Dec 14, 2022
 * **Test data release**: Mar 29, 2023
@@ -38,7 +88,7 @@ For more information check the [Track Proposal](https://drive.google.com/file/d/
 * **Paper submission**: June 2nd, 2023
 * **Workshop**: September 11 or 12, at SIGDIAL x INLG 2023 in Prague, Czech Republic
 
-# Registration Details
+## Registration Details
 
 For registration go to the [Registration Details section](https://chateval.org/dstc11/annex-registration-details) at the [ChatEval website](https://chateval.org/dstc11).
 
@@ -46,7 +96,7 @@ There must be only one team per laboratory or research group. The members of the
 
 Any updates and information about the tracks will be posted on the [DSTC11 official website](https://dstc11.dstc.community/), or check the [DSTC11 official website](https://dstc11.dstc.community/).
 
-# Submission Details
+## Submission Details
 
 Before submitting your results, do not forget to [Sign Up](https://my.chateval.org/accounts/signup/) on the ChatEval website. Only the team leader must register on ChatEval, with the same name and email address entered in the Microsoft Form. Once you have signed up, you can [Log In](https://my.chateval.org/accounts/login/) and [Submit](https://my.chateval.org/dstc11submit/) your  evaluations.
 
@@ -72,7 +122,7 @@ In order to submit test data evaluations, they must be named appropriately. Belo
 
 Please specify clearly in the submission name which evaluation it is intended for, the team name in <team_name> and the submission version <x> to identify the submission.
 
-# Organizers
+## Organizers
 
 * Mario Rodríguez-Cantelar (Universidad Politécnica de Madrid, Spain)
 * Chen Zhang (National University of Singapore, Singapore)
@@ -83,11 +133,11 @@ Please specify clearly in the submission name which evaluation it is intended fo
 * Luis F. D'Haro (Universidad Politécnica de Madrid, Spain)
 * Alexander Rudnicky (Carnegie Mellon University, USA)
 
-# Contact
+## Contact
 
-If you have further questions regarding the data, please let us know by the following email address at [dstc11-robust-multilingual-automatic-evaluation@googlegroups.com](dstc11-robust-multilingual-automatic-evaluation@googlegroups.com).
+If you have further questions regarding the data, please let us know by the following email address: [dstc11-robust-multilingual-automatic-evaluation@googlegroups.com](mailto:dstc11-robust-multilingual-automatic-evaluation@googlegroups.com).
 
-# Citation
+## Citation
 
 Please cite the paper, code or data from DSTC 11 Track 4:
 ```bibtex
@@ -102,7 +152,7 @@ Please cite the paper, code or data from DSTC 11 Track 4:
 }
 ```
 
-# Acknowledgement
+## Acknowledgement
 
 This research project is supported by the Comunidad de Madrid through the call Research Grants for Young Investigators from Universidad Politécnica de Madrid (GENIUS:APOYO-JOVENES-21-TAXTYC-32-K61X37).
 
@@ -126,7 +176,7 @@ This work is supported by the European Commission through Project ASTOUND (10107
 
 ![alt text](./img/Logo_EC.png)
 
-# References
+## References
 
 Deriu, J., Rodrigo, A., Otegi, A., Echegoyen, G., Rosset, S., Agirre, E., & Cieliebak, M. (2020). Survey on evaluation methods for dialogue systems. Artificial Intelligence Review, 1-56.
 
