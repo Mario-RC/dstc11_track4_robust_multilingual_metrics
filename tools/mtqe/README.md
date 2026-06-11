@@ -24,12 +24,12 @@ The files under `examples/` are small synthetic examples used to document the
 expected input and output schemas.
 
 MTQE expects an already translated file with source, translation, and optionally
-backtranslation columns. `sample_mtqe_input.csv` is the minimal input before
+backtranslation columns. `sample_input.csv` is the minimal input before
 similarity scores are computed:
 
 ```bash
 python tools/mtqe/compute_translation_similarity.py \
-  --input tools/mtqe/examples/sample_mtqe_input.csv \
+  --input tools/mtqe/examples/sample_input.csv \
   --output outputs/sample_mtqe_scored.csv
 ```
 
