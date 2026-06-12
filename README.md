@@ -1,4 +1,6 @@
-# DSTC11: Dialogue System Technology Challenge 11<br/><br/>Track 4: Robust and Multilingual Automatic Evaluation Metrics for Open-Domain Dialogue Systems
+# DSTC11: Dialogue System Technology Challenge 11
+
+## Track 4: Robust and Multilingual Automatic Evaluation Metrics for Open-Domain Dialogue Systems
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
