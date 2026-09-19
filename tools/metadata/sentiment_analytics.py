@@ -70,9 +70,9 @@ def output_paths(input_path: Path, utterance_output: str | None, sentence_output
     sentence_name = utterance_name.replace("_utterance_sentiment_analytics.csv", "_sentence_sentiment_analytics.csv")
 
     utterance_path = Path(utterance_output) if utterance_output else input_path.with_name(utterance_name)
-    sentence_path = Path(sentence_output) if sentence_output else utterance_path.with_name(sentence_name)
     if utterance_path.suffix.lower() != ".csv":
         utterance_path = utterance_path / utterance_name
+    sentence_path = Path(sentence_output) if sentence_output else utterance_path.with_name(sentence_name)
     if sentence_path.suffix.lower() != ".csv":
         sentence_path = sentence_path / sentence_name
     return utterance_path, sentence_path
@@ -164,9 +164,11 @@ def result_rows(
     cursor = 0
     for idx, sentence in enumerate(response.sentences or [], start=1):
         sentence_text = str(sentence.text)
-        start = cursor
+        start = text.find(sentence_text, cursor)
+        if start < 0:
+            start = cursor
         stop = start + len(sentence_text)
-        cursor = stop + 1
+        cursor = stop
         sent_pos, sent_neu, sent_neg = scores(sentence.confidence_scores)
         sentence_rows.append(
             {
